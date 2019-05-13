@@ -24,3 +24,24 @@ $(".benefits_list li").click(function () {
 	$(".text_column").text(benefitsList[$(this).attr("id")]);
 });
 
+function openNav() {
+  document.getElementById("rightSidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("rightSidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+$('.navbar-link').click(function() {
+    var href = $(this).attr("href");
+    $('html, body').animate({
+      scrollTop: $(href).offset().top
+    }, 500);
+    return false;
+  });
+
+AOS.init({
+  easing: 'ease-in-quad',
+});

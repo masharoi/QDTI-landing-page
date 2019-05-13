@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* Body */
 body {
-	font-family: source-sans-pro;
-	background-color: blue;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -13,76 +11,124 @@ body {
 section {
 	min-height: 100vh;
 }
-.page-container {
-	height: 100vh;
-}
 /* Navigation */
-header {
-	width: 100%;
-	height: 5%;
+.sidebar {
+	z-index: 2;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+.sidebar a {
+	padding: 20px 8px 20px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+.sidebar a:hover {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+.sidebar .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.openbtn {
+	mix-blend-mode: exclusion;
+	font-size: 30px;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	position: fixed;
+	z-index: 1;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+	.sidebar a {
+		font-size: 18px;
+	}
+}
+.small-sidebar {
+	visibility: collapse;
 }
 .logo {
-	float: left;
+	z-index: 2;
 	border-radius: 50%;
 	width: 50px;
-	margin: 1% 2%;
+	padding: 5px;
 	position: fixed;
+	top: 0;
+	z-index: 1;
+	margin: 10px;
 }
 nav {
-	float: right;
-	width: 50%;
-	text-align: right;
-	margin-right: 25px;
+	mix-blend-mode: exclusion;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	padding: 15px 50px;
 }
 header nav ul {
 	list-style: none;
 	float: right;
+	position: relative;
 }
 nav ul li {
-	float: left;
-	color: white;
-	font-size: 14px;
-	text-align: left;
-	letter-spacing: 2px;
-	margin: 10% 25px;
-	font-weight: bold;
+	color: black;
+	font-size: 18px;
 	transition: all 0.3s linear;
+	display: inline;
+	padding: 0 10px;
+	font-family: 'Khula', sans-serif;
 }
 ul li a {
 	color: white;
 	text-decoration: none;
 }
-ul li:hover a {
-	color: #8f0396;
+ul li a:hover {
+	color: white;
 	text-decoration: none;
 }
+/* Hero Section */
 .hero_header {
 	color: #FFFFFF;
 	text-align: left;
-	margin-top: 5%;
+	margin-top: 15%;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 5%;
 	letter-spacing: 4px;
 }
-/* Hero Section */
 .hero {
 	background-repeat: no-repeat;
-	background-size:cover;
+	background-size: cover;
+	font-family: 'Khula', sans-serif;
 	padding-top: 200px;
-	padding-bottom: 180px;
-	 
-}
-.light {
-	font-weight: bold;
-	color: #717070;
+	padding-bottom: 100px;
 }
 .tagline {
 	text-align: left;
 	color: #FFFFFF;
 	margin-top: 1%;
-	font-weight: lighter;
-	text-transform: uppercase;
+	font-weight: 300;
 	letter-spacing: 1px;
 	margin-left: 5%;
 	margin-right: 40%;
@@ -92,9 +138,9 @@ ul li:hover a {
 /* About Section */
 #about {
 	display: inline-block;
-	background: linear-gradient(black, white);
-	margin-top: 0px;
+	background: black;
 	padding: 10% 12%;
+	font-family: 'Khula', sans-serif;
 }
 .sensor-tech-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -110,15 +156,24 @@ ul li:hover a {
 	height: 600px;
 	margin: 20px 70px;
 }
+.magnetic-imaging-card img {
+	max-height: 300px;
+}
 .card-body .btn {
 	background: #580060;
 	color: white;
 	margin: 0 35%;
 	white-space: nowrap;
 }
+.card-body .btn:hover {
+	background: #2e0033;
+	color:white;
+}
 /* benefits */
 #benefits {
-	margin: 6% 10% 6% 6%;
+	padding: 6% 10% 6% 6%;
+	font-family: 'Khula', sans-serif;
+	background: white;
 }
 .text_row {
 	text-align: justify;
@@ -138,6 +193,7 @@ ul li:hover a {
 	padding: 1em 0;
 	font-size: 1.2em;
 	text-align: right;
+	cursor: pointer;
 }
 .benefits_list li img {
 	width: 35px;
@@ -174,10 +230,10 @@ ul li:hover a {
 	display: none;
 }
 /* Team */
-
 .carousel {
 	padding: 6% 0;
 	background: #282528;
+	font-family: 'Khula', sans-serif;
 }
 .member-info {
 	padding: 25px;
@@ -223,10 +279,11 @@ ul li:hover a {
 }
 .contact_info {
 	text-align: right;
-	font-weight: lighter;
+	font-weight: 300;
 	line-height: 1.5em;
 	margin: 0 5% 5% 0;
 	font-size: 2em;
+	font-family: 'Khula', sans-serif;
 }
 .copyright {
 	text-align: center;
@@ -293,7 +350,7 @@ ul li:hover a {
 		overflow: hidden;
 	}
 	.first-member-info {
-		margin:  8% 8% 3% 8%;
+		margin: 8% 8% 3% 8%;
 	}
 	.member-img {
 		width: 100px;
@@ -310,7 +367,7 @@ ul li:hover a {
 		margin: 70px 0 0 0;
 	}
 	.carousel {
-		padding:0px;
+		padding: 0px;
 	}
 	/* navigation*/
 	.logo {
@@ -411,6 +468,12 @@ ul li:hover a {
 }
 /* Smaller Desktops */
 @media (min-width: 500px) and (max-width: 1100px) {
+	.small-sidebar {
+		visibility: visible;
+	}
+	header nav ul {
+		visibility: collapse;
+	}
 	/* about */
 	.sensor-tech-card {
 		font-size: 0.85em;
@@ -423,8 +486,7 @@ ul li:hover a {
 	}
 	#about {
 		display: inline-block;
-		background-color: gray;
-		padding: 15% 0;
+		padding: 0;
 	}
 	/* Footer */
 	#map {
@@ -468,7 +530,7 @@ ul li:hover a {
 		padding: 0px;
 	}
 	.first-member-info {
-		margin:  8% 8% 3% 8%;
+		margin: 8% 8% 3% 8%;
 	}
 	.member-img {
 		width: 100px;
@@ -483,16 +545,26 @@ ul li:hover a {
 		margin: 70px 0 0 0;
 	}
 	.carousel {
-		padding:0px;
+		padding: 0px;
 	}
 }
 /* Small Desktops */
 @media (min-width: 1101px) and (max-width: 1200px) {
+	.small-sidebar {
+		visibility: visible;
+	}
+	header nav ul {
+		visibility: collapse;
+	}
+	/* about */
 	#about {
 		display: inline-block;
-		background-color: gray;
-		padding: 15% 15%;
+		padding: 0 100px;
 	}
+	.card-body .btn {
+		margin: 0 25%;
+	}
+	/* benefits */
 	.benefits_container {
 		margin: 2%;
 	}
@@ -526,13 +598,12 @@ ul li:hover a {
 	.hero_header {
 		margin-left: 10%;
 	}
-	
 	/* team */
 	.member-info {
 		padding: 0px;
 	}
 	.first-member-info {
-		margin:  8% 8% 3% 8%;
+		margin: 8% 8% 3% 8%;
 	}
 	.member-img {
 		width: 100px;
@@ -547,11 +618,18 @@ ul li:hover a {
 		margin: 70px 0 0 0;
 	}
 	.carousel {
-		padding:0px;
+		padding: 0px;
 	}
 }
 /* Bigger Desktops */
 @media (min-width: 1201px) and (max-width: 1450px) {
+	/* navigation */
+	.small-sidebar {
+		visibility: visible;
+	}
+	header nav ul {
+		visibility: collapse;
+	}
 	/*	about*/
 	.sensor-tech-card {
 		font-size: 0.9em;
@@ -561,7 +639,6 @@ ul li:hover a {
 	}
 	#about {
 		display: inline-block;
-		background-color: gray;
 		padding: 15% 2%;
 	}
 	/* Benefits */

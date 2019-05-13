@@ -5,26 +5,33 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Khula:300,400" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <title>QDTI</title>
 </head>
 
 <body>
 <!-- Main Container -->
 <div> 
-  <!-- Navigation -->
-  <header> <a href=""><img class="logo sticky" src="images/qdti-logo.PNG" alt=""></a>
-    <nav>
-      <ul>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="#about">PUBLICATIONS</a></li>
-      </ul>
-    </nav>
-  </header>
+  
   <!-- Hero Section -->
   <section class="hero" id="hero" style="background-image: url('images/fractal5.jpg');">
+    <header class="sticky"> <a href=""><img class="logo" src="images/qdti-logo.PNG" alt=""></a>
+      <nav>
+        <ul>
+          <li><a href="news.html">NEWS</a></li>
+          <li><a href="#about">PUBLICATIONS</a></li>
+        </ul>
+      </nav>
+      <div id="rightSidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="#hero" class="navbar-link">About</a> <a href="#about" class="navbar-link">Technology</a> <a href="#benefits" class="navbar-link">Why QDTI</a> <a href="#team" class="navbar-link">Team</a> <a href="#contact" class="navbar-link">Contact</a>
+        <hr class="small-sidebar">
+        <a href="news.html" class="navbar-link small-sidebar">News</a> <a href="news.html" class="navbar-link  small-sidebar">Publications</a> </div>
+      <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
+    </header>
     <h2 class="hero_header">Quantum Diamond Technologies</h2>
-    <p class="tagline">A still more glorious dawn awaits hundreds of thousands venture take root and flourish bits of moving fluff hundreds of thousands? From which we spring citizens of distant epochs concept of the number one a mote of dust suspended in a sunbeam a very small stage in a vast cosmic arena extraordinary claims require extraordinary evidence and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
+    <p class="tagline" >A still more glorious dawn awaits hundreds of thousands venture take root and flourish bits of moving fluff hundreds of thousands? From which we spring citizens of distant epochs concept of the number one a mote of dust suspended in a sunbeam a very small stage in a vast cosmic arena extraordinary claims require extraordinary evidence and billions upon billions upon billions upon billions upon billions upon billions upon billions.</p>
   </section>
   
   <!-- About Section -->
@@ -52,11 +59,11 @@
   <!-- Benefits Section -->
   <section id="benefits">
     <h2 class="header">Why QDTI?</h2>
-    <p class="text_row">Extraordinary claims require extraordinary evidence invent the universe Sea of Tranquility hearts of the stars tingling of the spine Cambrian explosion. A still more glorious dawn awaits a still more glorious dawn awaits finite but unbounded at the edge of forever vanquish the impossible at the edge of forever? Courage of our questions citizens of distant epochs rings of Uranus rings of Uranus the only home we've ever known rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions. <span class="more">Read More</span> </p>
+    <p class="text_row" >Extraordinary claims require extraordinary evidence invent the universe Sea of Tranquility hearts of the stars tingling of the spine Cambrian explosion. A still more glorious dawn awaits a still more glorious dawn awaits finite but unbounded at the edge of forever vanquish the impossible at the edge of forever? Courage of our questions citizens of distant epochs rings of Uranus rings of Uranus the only home we've ever known rich in heavy atoms and billions upon billions upon billions upon billions upon billions upon billions upon billions. <span class="more">Read More</span> </p>
     <div class="row">
       <div class="col-xl-6 col-sm-12">
         <ul class="benefits_list">
-          <li id="0" class="more">Ultra simple sample preparation <img  src="images/minus.png" alt="">
+          <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
             <div class="text-column-small"> Worldlets vastness is bearable only through love Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit shores of the cosmic ocean tingling of the spine quasar. Across the centuries hearts of the stars a mote of dust suspended in a sunbeam with pretty stories for which there's little good evidence laws of physics bits of moving fluff. Rich in mystery venture qui dolorem ipsum quia dolor sit amet across the centuries the carbon in our apple pies the carbon in our apple pies and billions upon billions upon billions upon billions upon billions upon billions upon billions. </div>
           </li>
           <li id="1"> Minimal sample input <img src="images/plus.png" alt="">
@@ -171,8 +178,10 @@
 <!-- Copyrights Section -->
 <div class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</div>
 <!-- Main Container Ends --> 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script> 
 <script src="js/map.js"></script> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSt4lOI0uHsAvpVn55clfbQ1pZNKi1dQY&callback=initMap"></script> 
