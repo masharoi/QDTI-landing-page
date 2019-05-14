@@ -75,7 +75,6 @@ section {
 	padding: 5px;
 	position: fixed;
 	top: 0;
-	z-index: 1;
 	margin: 10px;
 }
 nav {
@@ -111,7 +110,7 @@ ul li a:hover {
 .hero_header {
 	color: #FFFFFF;
 	text-align: left;
-	margin-top: 15%;
+	margin-top: 11%;
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: 5%;
@@ -181,7 +180,6 @@ ul li a:hover {
 	line-height: 25px;
 	margin-left: 10%;
 	margin-right: 8%;
-	color: #A3A3A3;
 	font-size: 1.2em;
 	line-height: 1.4em;
 }
@@ -213,7 +211,6 @@ ul li a:hover {
 	font-weight: lighter;
 	line-height: 1.5em;
 	margin: 15% 15% 10% 1%;
-	color: #A3A3A3;
 	text-indent: 0px;
 	font-size: 1.3em;
 }
@@ -222,7 +219,7 @@ ul li a:hover {
 	width: 50%;
 }
 .text-column-small {
-	color: gray;
+	color: black;
 	font-weight: normal;
 	font-size: 0.8em;
 	white-space: normal;
@@ -486,7 +483,7 @@ ul li a:hover {
 	}
 	#about {
 		display: inline-block;
-		padding: 0;
+		padding: 0 30px;
 	}
 	/* Footer */
 	#map {
@@ -506,15 +503,22 @@ ul li a:hover {
 		padding: 30% 10% 2% 15%;
 	}
 	/* Benefits */
+	.text_row {
+		font-size: 1.1em;
+		text-align: left;
+	}
 	.text_column {
 		display: none;
 	}
 	.text-column-small {
 		display: block;
+		text-align: left;
 	}
 	.benefits_list li {
 		padding: 0.88em 0;
 		font-size: 1.5em;
+		text-align: left;
+		white-space: nowrap;
 	}
 	.tagline {
 		margin-left: 10%;
@@ -559,7 +563,7 @@ ul li a:hover {
 	/* about */
 	#about {
 		display: inline-block;
-		padding: 0 100px;
+		padding: 50px 200px;
 	}
 	.card-body .btn {
 		margin: 0 25%;
@@ -569,17 +573,22 @@ ul li a:hover {
 		margin: 2%;
 	}
 	.text_row {
-		font-size: 0.95em;
+		font-size: 1.1em;
 	}
 	.text_column {
 		display: none;
 	}
 	.text-column-small {
 		display: block;
+		text-align: left;
+	}
+	.benefits_list {
+		text-align: left;
 	}
 	.benefits_list li {
 		padding: 0.88em 0;
 		font-size: 1.5em;
+		text-align: left;
 	}
 	.benefits_list li img {
 		width: 25px;
@@ -645,9 +654,10 @@ ul li a:hover {
 	.benefits_list li {
 		padding: 1em 0;
 		font-size: 1em;
+		
 	}
 	.text_row {
-		font-size: 1em;
+		font-size: 1.1em;
 	}
 	.text_column {
 		font-size: 1em;
