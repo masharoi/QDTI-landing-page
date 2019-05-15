@@ -11,10 +11,13 @@ function initMap() {
 			zoom: 13,
 			center: uluru
 		});
-	var styles = [{
+	
+
+	var styles = [
+		{
 		"featureType": "landscape",
 		"stylers": [{
-			"saturation": -100
+			"saturation": 32
 		}, {
 			"lightness": 65
 		}, {
@@ -23,19 +26,35 @@ function initMap() {
 	}, {
 		"featureType": "poi",
 		"stylers": [{
-			"saturation": -100
-		}, {
-			"lightness": 51
-		}, {
+                "hue": "#386000"
+            },
+            {
+                "saturation": -60
+            },
+            {
+                "lightness": -35.4
+            },
+            {
+                "gamma": 1
+            }, {
 			"visibility": "simplified"
 		}]
 	}, {
 		"featureType": "road.highway",
-		"stylers": [{
-			"saturation": -100
-		}, {
-			"visibility": "simplified"
-		}]
+        "stylers": [
+            {
+                "hue": "#53FF00"
+            },
+            {
+                "saturation": -73
+            },
+            {
+                "lightness": 40
+            },
+            {
+                "gamma": 1
+            }
+        ]
 	}, {
 		"featureType": "road.arterial",
 		"stylers": [{
@@ -88,7 +107,7 @@ function initMap() {
 		}]
 	}];
 
-	map.set('styles', styles);
+	map.set('styles',styles);
 	
 	var marker = new google.maps.Marker({
 		position: uluru,

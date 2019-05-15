@@ -122,6 +122,7 @@ ul li a:hover {
 	font-family: 'Khula', sans-serif;
 	padding-top: 200px;
 	padding-bottom: 100px;
+	background-color: #140021;
 }
 .tagline {
 	text-align: left;
@@ -135,52 +136,82 @@ ul li a:hover {
 	font-size: 1.5em;
 }
 /* About Section */
+.about-imaging {
+	display: none;
+	font-size: 0.9em;
+}
+.about-imaging .card .card-body {
+	margin: 20px;
+}
+.about-imaging .card .card-body a {
+	text-align: right;
+	cursor: pointer;
+}
+
 #about {
 	display: inline-block;
-	background: black;
-	padding: 10% 12%;
+	background: gray;
+	padding: 8% 17%;
 	font-family: 'Khula', sans-serif;
+	width: 100%;
+	background-size: cover;
+	
 }
 .sensor-tech-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
-	background-color: #f1f1f1;
+	padding: 20px;
 	height: 600px;
-	margin: 20px 70px;
+	margin: 70px 50px;
 }
 .magnetic-imaging-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 16px;
+	padding: 20px;
 	background-color: #f1f1f1;
 	height: 600px;
-	margin: 20px 70px;
+	margin: 70px 50px;
+	
 }
 .magnetic-imaging-card img {
 	max-height: 300px;
 }
+.card-body {
+	font-size: 1.5em;
+}
+.card-title {
+	font-size: 1.8em;
+	letter-spacing: -0.09em;
+}
 .card-body .btn {
 	background: #580060;
 	color: white;
-	margin: 0 35%;
+	margin: 0 30%;
 	white-space: nowrap;
+	height: 55px;
+	text-align:center;
+	line-height: 50px;
+	font-size: 1em;
 }
 .card-body .btn:hover {
 	background: #2e0033;
-	color:white;
+	color: white;
 }
 /* benefits */
+#more-benefits-text {
+	display: none;
+}
 #benefits {
 	padding: 6% 10% 6% 6%;
 	font-family: 'Khula', sans-serif;
 	background: white;
+	background-size: 100vw 100vh;
 }
-.text_row {
+.text-row {
 	text-align: justify;
 	font-weight: lighter;
 	line-height: 25px;
 	margin-left: 10%;
 	margin-right: 8%;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	line-height: 1.4em;
 }
 .benefits_list {
@@ -189,7 +220,7 @@ ul li a:hover {
 .benefits_list li {
 	list-style: none;
 	padding: 1em 0;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	text-align: right;
 	cursor: pointer;
 }
@@ -198,10 +229,14 @@ ul li a:hover {
 }
 .header {
 	margin-left: 10%;
+	color: rgb(56, 96, 0);
+	font-weight:bold;
 }
 .more {
 	color: #580060;
 	font-weight: bold;
+	white-space: nowrap;
+	cursor: pointer;
 }
 .benefits_container {
 	margin: 5%;
@@ -212,7 +247,9 @@ ul li a:hover {
 	line-height: 1.5em;
 	margin: 15% 15% 10% 1%;
 	text-indent: 0px;
-	font-size: 1.3em;
+	font-size: 2.2em;
+	border-left: 10px solid rgba(56, 96, 0, 0.7);
+	padding-left: 15px;
 }
 .column {
 	float: left;
@@ -225,6 +262,7 @@ ul li a:hover {
 	white-space: normal;
 	width: 100%;
 	display: none;
+	
 }
 /* Team */
 .carousel {
@@ -296,7 +334,7 @@ ul li a:hover {
 /* Mobile */
 @media (max-width: 320px) {
 	/* benefits */
-	.text_row {
+	.text-row {
 		margin-left: 5%;
 		margin-right: 5%;
 		font-size: 1em;
@@ -503,7 +541,7 @@ ul li a:hover {
 		padding: 30% 10% 2% 15%;
 	}
 	/* Benefits */
-	.text_row {
+	.text-row {
 		font-size: 1.1em;
 		text-align: left;
 	}
@@ -572,7 +610,7 @@ ul li a:hover {
 	.benefits_container {
 		margin: 2%;
 	}
-	.text_row {
+	.text-row {
 		font-size: 1.1em;
 	}
 	.text_column {
@@ -656,7 +694,7 @@ ul li a:hover {
 		font-size: 1em;
 		
 	}
-	.text_row {
+	.text-row {
 		font-size: 1.1em;
 	}
 	.text_column {

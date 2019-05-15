@@ -1,12 +1,12 @@
-let text1 = "Worldlets vastness is bearable only through love Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit shores of the cosmic ocean tingling of the spine quasar. Across the centuries hearts of the stars a mote of dust suspended in a sunbeam with pretty stories for which there's little good evidence laws of physics bits of moving fluff. Rich in mystery venture qui dolorem ipsum quia dolor sit amet across the centuries the carbon in our apple pies the carbon in our apple pies and billions upon billions upon billions upon billions upon billions upon billions upon billions.";
+let text1 = "Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated.";
 
-let text2 = "Paroxysm of global death decipherment muse about a billion trillion intelligent beings culture. Across the centuries dispassionate extraterrestrial observer Cambrian explosion with pretty stories for which there's little good evidence something incredible is waiting to be known across the centuries. Across the centuries citizens of distant epochs the only home we've ever known dream of the mind's eye shores of the cosmic ocean with pretty stories for which there's little good evidence and billions upon billions upon billions upon billions upon billions upon billions upon billions.";
+let text2 = "Because the sample is not being repeatedly washed over and over again, there is zero loss of sample material. As such, only a few microliters of sample material is necessary to perform the assay – a critical benefit where sample material is in extremely short supply!";
 
-let text3 = "At the edge of forever courage of our questions permanence of the stars emerged into consciousness bits of moving fluff rings of Uranus. White dwarf take root and flourish how far away inconspicuous motes of rock and gas finite but unbounded muse about. A mote of dust suspended in a sunbeam the carbon in our apple pies rich in mystery the only home we've ever known cosmic ocean hundreds of thousands and billions upon billions upon billions upon billions upon billions upon billions upon billions.";
+let text3 = "Despite the dramatically reduced sample prep and sample input needs, the QDTI system is able to delivery ultrasensitive performance without the attendant complexity and costs.  The capability offers new diagnostic tools for improved clinical decisions and better patient health.";
 
-let text4 = "The carbon in our apple pies colonies with pretty stories for which there's little good evidence circumnavigated galaxies how far away. Vastness is bearable only through love made in the interiors of collapsing stars bits of moving fluff shores of the cosmic ocean emerged into consciousness the sky calls to us. Courage of our questions the only home we've ever known made in the interiors of collapsing stars tendrils of gossamer clouds rich in mystery a very small stage in a vast cosmic arena and billions upon billions upon billions upon billions upon billions upon billions upon billions.";
+let text4 = "Existing high-sensitivity diagnostics require skilled technicians and laborious processing steps, which increase the time to result and the assay costs. The drastically simpler magnetic assay deliver similar results at lower cost.";
 
-let text5 = "Courage of our questions hearts of the stars the carbon in our apple pies a mote of dust suspended in a sunbeam venture extraordinary claims require extraordinary evidence. Made in the interiors of collapsing stars hundreds of thousands star stuff harvesting star light rings of Uranus citizens of distant epochs vastness is bearable only through love. Descended from astronomers vastness is bearable only through love hundreds of thousands made in the interiors of collapsing stars cosmic ocean the ash of stellar alchemy and billions upon billions upon billions upon billions upon billions upon billions upon billions.";
+let text5 = "QDTI is building an open platform right from the start, allowing users to develop assays for a wide range of target biomarkers.  Users can build their own homebrew capability.  Moreover, in contrast to all commercialized platform today, the QDTI system can provide detection for not only proteins, but nucleic acids and cells – all on the same detection platform.";
 
 let benefitsList = [text1, text2, text3, text4, text5];
 
@@ -24,24 +24,53 @@ $(".benefits_list li").click(function () {
 	$(".text_column").text(benefitsList[$(this).attr("id")]);
 });
 
+// open the side bar.
 function openNav() {
-  document.getElementById("rightSidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+	document.getElementById("rightSidebar").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
 }
 
+//close the side bar.
 function closeNav() {
-  document.getElementById("rightSidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
+	document.getElementById("rightSidebar").style.width = "0";
+	document.getElementById("main").style.marginLeft = "0";
 }
 
-$('.navbar-link').click(function() {
-    var href = $(this).attr("href");
-    $('html, body').animate({
-      scrollTop: $(href).offset().top
-    }, 500);
-    return false;
-  });
-
-AOS.init({
-  easing: 'ease-in-quad',
+// scroll to the chosen section.
+$('.navbar-link').click(function () {
+	var href = $(this).attr("href");
+	$('html, body').animate({
+		scrollTop: $(href).offset().top
+	}, 500);
+	return false;
 });
+
+$('.text-row .more').click(function () {
+	if ($('.text-row .more').text() == 'Read More') {
+		$('#more-benefits-text').show();
+		$('.text-row .more').text('Less');
+	} else {
+		$('#more-benefits-text').hide();
+		$('.text-row .more').text('Read More');
+	}
+
+})
+
+// hide the technology info and show the expanded magnetic imaging platform.
+$('.magnetic-imaging-card button').click(function () {
+	//$('.sensor-tech-card').show("hide", { direction: "right" }, 2000);
+	$('.magnetic-imaging-card').hide();
+	$('.sensor-tech-card').hide();
+
+	$('.about-imaging').show();
+});
+
+// hide the expanded magnetic imaging platform and show the technology info.
+$('.about-imaging .card .card-body a').click(function () {
+	$('.magnetic-imaging-card').show();
+	$('.sensor-tech-card').show();
+
+	$('.about-imaging').hide();
+});
+
+// toggle the news/publications view
