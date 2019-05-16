@@ -71,3 +71,7 @@ body {
 	font-family: 'Khula', sans-serif;
 	font-size: 1.2em;
 }
+
+.selected {
+	color: white;
+}

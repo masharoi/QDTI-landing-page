@@ -57,20 +57,56 @@ $('.text-row .more').click(function () {
 })
 
 // hide the technology info and show the expanded magnetic imaging platform.
-$('.magnetic-imaging-card button').click(function () {
+$('#magnetic-imaging-card button').click(function () {
 	//$('.sensor-tech-card').show("hide", { direction: "right" }, 2000);
-	$('.magnetic-imaging-card').hide();
-	$('.sensor-tech-card').hide();
+	$('#magnetic-imaging-card').hide();
+	$('#sensor-tech-card').hide();
 
-	$('.about-imaging').show();
+	$('#about-imaging').show();
 });
 
 // hide the expanded magnetic imaging platform and show the technology info.
-$('.about-imaging .card .card-body a').click(function () {
-	$('.magnetic-imaging-card').show();
-	$('.sensor-tech-card').show();
+$('#about-imaging .card .card-body a').click(function () {
+	$('#magnetic-imaging-card').show();
+	$('#sensor-tech-card').show();
 
-	$('.about-imaging').hide();
+	$('#about-imaging').hide();
 });
 
-// toggle the news/publications view
+// hide the technology info and show the expanded quantum sensor
+$('#sensor-tech-card button').click(function () {
+	$('#magnetic-imaging-card').hide();
+	$('#sensor-tech-card').hide();
+
+	$('#about-sensor').show();
+});
+
+// show the technology info and hide the expanded quantum sensor
+$('#about-sensor .card .card-body a').click(function () {
+	$('#magnetic-imaging-card').show();
+	$('#sensor-tech-card').show();
+
+	$('#about-sensor').hide();
+});
+
+// toggle core team/board view
+$('#core-team').click(function() {
+	if ($('#core-team-option').css('display') == 'none') {
+		$('#core-team-option').show();
+		$('#advisory-board-option').hide();
+		$('#advisory-board').css('color', '#818181');
+		$('#core-team').css('color', '#f1f1f1');
+	}
+});
+
+$('#advisory-board').click(function() {
+	if ($('#advisory-board-option').css('display') == 'none') {
+		$('#advisory-board-option').show();
+		$('#core-team-option').hide();
+		$('#advisory-board').css('color', '#f1f1f1');
+		$('#core-team').css('color', '#818181');
+	}
+});
+  $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });

@@ -21,15 +21,23 @@ function initMap() {
 		}, {
 			"lightness": 65
 		}, {
-			"visibility": "on"
+			"visibility": "simplified"
 		}]
-	}, {
+	},{
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+    "visibility": "off"
+      }
+    ]
+  }, {
 		"featureType": "poi",
 		"stylers": [{
                 "hue": "#386000"
             },
             {
-                "saturation": -60
+                "saturation": -80
             },
             {
                 "lightness": -35.4
@@ -39,7 +47,14 @@ function initMap() {
             }, {
 			"visibility": "simplified"
 		}]
-	}, {
+	},{
+		"featureType": "poi",
+			"elementType": "labels",
+		"stylers": [ {
+			"visibility": "off"
+		}]
+	},
+		{
 		"featureType": "road.highway",
         "stylers": [
             {
@@ -71,7 +86,7 @@ function initMap() {
 		}, {
 			"lightness": 40
 		}, {
-			"visibility": "on"
+			"visibility": "simplified"
 		}]
 	}, {
 		"featureType": "transit",
@@ -83,13 +98,13 @@ function initMap() {
 	}, {
 		"featureType": "administrative.province",
 		"stylers": [{
-			"visibility": "on"
+			"visibility": "simplified"
 		}]
 	}, {
 		"featureType": "water",
 		"elementType": "labels",
 		"stylers": [{
-			"visibility": "on"
+			"visibility": "simplified"
 		}, {
 			"lightness": -25
 		}, {

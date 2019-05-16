@@ -11,189 +11,195 @@
 <title>QDTI</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
 <!-- Main Container -->
 <div> 
-  
+  <!-- navigation --> 
+  <a href="#hero" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
+  <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
+  <div id="rightSidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <nav class="navbar  navbar-dark" id="navbar-scroll">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a href="#hero" class="navbar-link nav-link">About</a></li>
+        <li class="nav-item"><a href="#about" class="navbar-link nav-link">Technology</a></li>
+        <li class="nav-item"><a href="#benefits" class="navbar-link nav-link">Why QDTI</a></li>
+        <li class="nav-item"><a href="#team" class="navbar-link nav-link">Team</a></li>
+        <li class="nav-item"><a href="#contact" class="navbar-link nav-link">Contact</a></li>
+		  <hr>
+        <li class="nav-item"><a href="news.html" class="navbar-link nav-link">News</a></li>
+        <li class="nav-item"><a href="publications.html" class="navbar-link nav-link">Publications</a></li>
+      </ul>
+    </nav>
+  </div>
   <!-- Hero Section -->
-  <section class="hero" id="hero" style="background-image: url('images/fractal6.jpg');">
-    <header class="sticky"> <a href="#hero" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
-      <nav>
-        <ul>
-          <li><a href="news.html">NEWS</a></li>
-          <li><a href="news.html#publications">PUBLICATIONS</a></li>
-        </ul>
-      </nav>
-      <div id="rightSidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <a href="#hero" class="navbar-link">About</a> <a href="#about" class="navbar-link">Technology</a> <a href="#benefits" class="navbar-link">Why QDTI</a> <a href="#team" class="navbar-link">Team</a> <a href="#contact" class="navbar-link">Contact</a>
-        <hr class="small-sidebar">
-        <a href="news.html#news" class="navbar-link small-sidebar">News</a> <a href="news.html#publications" class="navbar-link  small-sidebar">Publications</a> </div>
-      <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
-    </header>
-    <h2 class="hero_header">Quantum Diamond Technologies</h2>
-    <p class="tagline" >QDTI is a technology company based in Somerville, Massachusetts, and seeking to bring a new set of technologies from the lab to commercial application. Founded with a team of leading quantum scientists from Harvard University, QDTI is commercializing a new class of nanoscale devices that rely on the fundamental properties of quantum mechanics to allow new applications in sensing, metrology, computing and other fields.</p>
-  </section>
-  
-  <!-- About Section -->
-  <section id="about" style="background-image: url('images/rainbow-plate2.jpeg');">
-    <div class="row default-about">
-      <div class="col col-xl-6 col-sm-12"> 
-        <!--    <div class="card magnetic-imaging-card"> <img src="images/rainbow-plate2.jpeg" class="card-img-top" alt="..."> -->
-        <div class="card magnetic-imaging-card" style="background-color: rgba(245, 245, 245, 0.82);">
-          <div class="card-body d-flex flex-column">
+  <div  >
+    <section class="hero" id="hero" style="background-image: url('images/fractal6.jpg');">
+      <h2 class="hero_header">Quantum Diamond Technologies</h2>
+      <p class="tagline" >QDTI is a technology company based in Somerville, Massachusetts, and seeking to bring a new set of technologies from the lab to commercial application. Founded with a team of leading quantum scientists from Harvard University, QDTI is commercializing a new class of nanoscale devices that rely on the fundamental properties of quantum mechanics to allow new applications in sensing, metrology, computing and other fields.</p>
+    </section>
+    
+    <!-- About Section -->
+    
+    <section id="about" style="background-image: url('images/rainbow-plate2.jpeg');">
+      <div class="row default-about">
+        <div class="col col-xl-6 col-sm-12"> 
+          <!--    <div class="card magnetic-imaging-card"> <img src="images/rainbow-plate2.jpeg" class="card-img-top" alt="..."> -->
+          <div class="card" id="magnetic-imaging-card" style="background-color: rgba(245, 245, 245, 0.82);">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Magnetic Imaging Platform</h5>
+              <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm.</p>
+              <button class="btn mt-auto">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="col col-xl-6 col-sm-12"> 
+          <!-- <div class="card sensor-tech-card"> <img src="images/physics.jpg" class="card-img-top" alt="..."> -->
+          <div class="card" id="sensor-tech-card" style="background-color: rgba(245, 245, 245, 0.82);">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Quantum Sensor Technology</h5>
+              <p class="card-text mt-auto">QDTI’s quantum magnetic sensing technology is based upon crystal defects in diamond called nitrogen-vacancy (NV) centers. NV centers result from the substitution of two adjacent carbon atoms in the diamond lattice with a nitrogen atom and an empty site - a vacancy.</p>
+              <button class="btn mt-auto"><span class="button-content">Learn More</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about-imaging">
+        <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
+          <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
             <h5 class="card-title">Magnetic Imaging Platform</h5>
-            <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm.</p>
-            <button class="btn mt-auto">Learn More</button> </div>
+            <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm. <br>
+              <br>
+              NV quantum magnetic sensing is performed by observing spin-dependent fluorescence from NV quantum sensors. When excited with green light from the ground electronic state, NV centers emit red fluorescence. This property allows for optically detected magnetic resonance (ODMR), in which the NV center’s magnetic environment is measured optically by observing its quantum state change in response to resonant microwave fields. <br>
+              <br>
+              The imagining platform contains NV centers in a thin sheet at the surface of a millimeter-scale diamond sensor.  The NV dependent fluorescence is imaged using conventional microscope optics.  When a magnetic sample is introduced to the sensor surface, each NV center experiences a magnetic (Zeeman) shift in response to its local magnetic field. A microwave field is applied to the entire sensor to drive spin transitions in the NV centers, then collect fluorescence images while the microwave frequency is swept. As each individual NV center comes into resonance with the microwave drive, its reduced fluorescence rate causes the image to dim in that pixel. By acquiring several images at a range of frequencies and performing an analysis at each pixel, we generate a map of the magnetic field in the sensing plane. </p>
+          </div>
         </div>
       </div>
-      <div class="col col-xl-6 col-sm-12"> 
-        <!-- <div class="card sensor-tech-card"> <img src="images/physics.jpg" class="card-img-top" alt="..."> -->
-        <div class="card sensor-tech-card" style="background-color: rgba(245, 245, 245, 0.82);">
-          <div class="card-body d-flex flex-column">
+      <div id="about-sensor">
+        <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
+          <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
             <h5 class="card-title">Quantum Sensor Technology</h5>
-            <p class="card-text mt-auto">QDTI’s quantum magnetic sensing technology is based upon crystal defects in diamond called nitrogen-vacancy (NV) centers. NV centers result from the substitution of two adjacent carbon atoms in the diamond lattice with a nitrogen atom and an empty site - a vacancy.</p>
-            <button class="btn mt-auto"><span class="button-content">Learn More</span></button> </div>
+            <p class="card-text mt-auto">QDTI’s quantum magnetic sensing technology is based upon crystal defects in diamond called nitrogen-vacancy (NV) centers. NV centers result from the substitution of two adjacent carbon atoms in the diamond lattice with a nitrogen atom and an empty site (a vacancy).
+              Each NV center has an electronic spin and a strong magnetic moment that provides sensitivity to magnetic fields. Pioneering research at Harvard established the superior magnetic sensitivity of NV quantum sensors in diamond compared to other technologies, particularly for high resolution sensing applications. Recent demonstrations of the tremendous sensitivity afforded by NV center magnetometers include sub-nanometer magnetic localization of individual proton spins, single-molecule detection, label-free magnetic resonance identification of individual protein molecules, and magnetic measurement of neuron action potentials from the exterior of whole, live marine worms.
+              Diamond NV magnetometry has in recent years moved beyond demonstration and into increasing use as a precision tool across many fields. A wide-field imaging modality can simultaneously interrogate fields of view larger than 1 mm with sub-micron spatial resolution.  Wide field quantum magnetic imaging systems are now in regular research use for biological and geophysical magnetic studies, testament to the versatility of this technology. </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="about-imaging">
-		
-      <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
-        <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
-          <h5 class="card-title">Magnetic Imaging Platform</h5>
-          <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm. <br>
-            <br>
-            NV quantum magnetic sensing is performed by observing spin-dependent fluorescence from NV quantum sensors. When excited with green light from the ground electronic state, NV centers emit red fluorescence. This property allows for optically detected magnetic resonance (ODMR), in which the NV center’s magnetic environment is measured optically by observing its quantum state change in response to resonant microwave fields. <br>
-            <br>
-            The imagining platform contains NV centers in a thin sheet at the surface of a millimeter-scale diamond sensor.  The NV dependent fluorescence is imaged using conventional microscope optics.  When a magnetic sample is introduced to the sensor surface, each NV center experiences a magnetic (Zeeman) shift in response to its local magnetic field. A microwave field is applied to the entire sensor to drive spin transitions in the NV centers, then collect fluorescence images while the microwave frequency is swept. As each individual NV center comes into resonance with the microwave drive, its reduced fluorescence rate causes the image to dim in that pixel. By acquiring several images at a range of frequencies and performing an analysis at each pixel, we generate a map of the magnetic field in the sensing plane. </p>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section id="benefits">
+      <h2 class="header">Why QDTI?</h2>
+      <p class="text-row" >Detecting tiny concentrations of biomolecules such as proteins is complicated by the vast quantity of other material in complex biofluids such as blood or serum. Industry standard high-sensitivity assays rely on measuring light emitted from a fluorescent molecule label, or from the product of an enzyme label on a substrate. Filter leakage, detector noise, and nonspecific autofluorescence of the sample itself all produce backgrounds that compete with true signals. <span id="more-benefits-text">Ultrasensitive assays must correctly identify individual target molecules amid millions or billions of others, placing strict constraints on false positive signals. Technologies based on optical detection therefore require lengthy sample preparation to reduce backgrounds, necessitating large, complex, and expensive instruments. QDTI’s magnetic detection, in contrast, provides high sensitivity even in raw samples.  Biofluids are negligibly magnetic compared to magnetic particle labels, so there is no intrinsic sample background — the magnetic signal comes only from the labels.  In addition, the magnetic signal permeates through optically fluorescent or opaque samples, so that detection can be made directly in whole blood. </span><span class="more">Read More</span> </p>
+      <div class="row">
+        <div class="col-xl-6 col-sm-12">
+          <ul class="benefits_list">
+            <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
+              <div class="text-column-small"> Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated. </div>
+            </li>
+            <li id="1"> Minimal sample input <img src="images/plus.png" alt="">
+              <div class="text-column-small"></div>
+            </li>
+            <li id="2"> Ultrasensitive detection of low-concentration biomarkers <img src="images/plus.png" alt="">
+              <div class="text-column-small"></div>
+            </li>
+            <li id="3">Reducing diagnostics costs <img src="images/plus.png" alt="">
+              <div class="text-column-small"></div>
+            </li>
+            <li id="4"> Flexibility in biomarker targets <img src="images/plus.png" alt="">
+              <div class="text-column-small"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xl-6 col-sm-12">
+          <p class="text_column">Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated.</p>
         </div>
       </div>
-    </div>
-  </section>
-  
-  <!-- Benefits Section -->
-  <section id="benefits">
-    <h2 class="header">Why QDTI?</h2>
-    <p class="text-row" >Detecting tiny concentrations of biomolecules such as proteins is complicated by the vast quantity of other material in complex biofluids such as blood or serum. Industry standard high-sensitivity assays rely on measuring light emitted from a fluorescent molecule label, or from the product of an enzyme label on a substrate. Filter leakage, detector noise, and nonspecific autofluorescence of the sample itself all produce backgrounds that compete with true signals. <span id="more-benefits-text">Ultrasensitive assays must correctly identify individual target molecules amid millions or billions of others, placing strict constraints on false positive signals. Technologies based on optical detection therefore require lengthy sample preparation to reduce backgrounds, necessitating large, complex, and expensive instruments. QDTI’s magnetic detection, in contrast, provides high sensitivity even in raw samples.  Biofluids are negligibly magnetic compared to magnetic particle labels, so there is no intrinsic sample background — the magnetic signal comes only from the labels.  In addition, the magnetic signal permeates through optically fluorescent or opaque samples, so that detection can be made directly in whole blood. </span><span class="more">Read More</span> </p>
-    <div class="row">
-      <div class="col-xl-6 col-sm-12">
-        <ul class="benefits_list">
-          <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
-            <div class="text-column-small"> Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated. </div>
-          </li>
-          <li id="1"> Minimal sample input <img src="images/plus.png" alt="">
-            <div class="text-column-small"></div>
-          </li>
-          <li id="2"> Ultrasensitive detection of low-concentration biomarkers <img src="images/plus.png" alt="">
-            <div class="text-column-small"></div>
-          </li>
-          <li id="3">Reducing diagnostics costs <img src="images/plus.png" alt="">
-            <div class="text-column-small"></div>
-          </li>
-          <li id="4"> Flexibility in biomarker targets <img src="images/plus.png" alt="">
-            <div class="text-column-small"></div>
-          </li>
-        </ul>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team">
+      <div id="team-options">
+        <h2 id="core-team">Core Team</h2>
+        <h2 id="advisory-board">Scientific Advisory Board</h2>
       </div>
-      <div class="col-xl-6 col-sm-12">
-        <p class="text_column">Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal minimal sample processing (2-steps only) before the sample is interrogated.</p>
-      </div>
-    </div>
-  </section>
-	
-
-  <!-- Team Section -->
-  <section id="team">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" background="images/temp.PNG">
-          <div class="row">
-            <div class="carousel-caption">
-              <h3 class="h3-responsive team-caption">Core Team</h3>
+      <div id="core-team-option">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info first-member-info"> <img class="member-img" src="images/stephen-hawking.jpg" alt="Card image cap">
+              <div class="member-text">
+                <h4 class="team-name">Stephen Hawking</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer.</p>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info first-member-info"> <img class="member-img" src="images/stephen-hawking.jpg" alt="Card image cap">
-                <div class="member-text">
-                  <h4 class="team-name">Stephen Hawking</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info middle-member-info"> <img class="member-img" src="images/albert-einstein.jpg" alt="Card image cap">
+              <div>
+                <h4 class="team-name">Albert Einstein</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer.</p>
               </div>
             </div>
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info middle-member-info"> <img class="member-img" src="images/albert-einstein.jpg" alt="Card image cap">
-                <div>
-                  <h4 class="team-name">Albert Einstein</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info last-member-info"> <img class="member-img" src="images/dmitri-mendeleev.jpg" alt="Card image cap">
-                <div>
-                  <h4 class="team-name">Dmitri Mendeleev</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
+          </div>
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info last-member-info"> <img class="member-img" src="images/dmitri-mendeleev.jpg" alt="Card image cap">
+              <div>
+                <h4 class="team-name">Dmitri Mendeleev</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-item" background="images/temp.PNG">
-          <div class="row">
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info first-member-info"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
-                <div>
-                  <h4 class="team-name">Gandalf</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info middle-member-info"> <img class="member-img" src="images/marie-curie.jpg" alt="Card image cap">
-                <div>
-                  <h4 class="team-name">Marie Curie</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-12" >
-              <div class="member-info last-member-info"> <img class="member-img" src="images/nikola-tesla.jpg" alt="Card image cap">
-                <div>
-                  <h4 class="team-name">Nikola Tesla</h4>
-                  <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
-                </div>
+      </div>
+      <div id="advisory-board-option">
+        <div class="row">
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info first-member-info"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
+              <div>
+                <h4 class="team-name">Gandalf</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="carousel-caption">
-              <h3 class="h3-responsive team-caption">Scientific Advisory Board</h3>
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info middle-member-info"> <img class="member-img" src="images/marie-curie.jpg" alt="Card image cap">
+              <div>
+                <h4 class="team-name">Marie Curie</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-sm-12" >
+            <div class="member-info last-member-info"> <img class="member-img" src="images/nikola-tesla.jpg" alt="Card image cap">
+              <div>
+                <h4 class="team-name">Nikola Tesla</h4>
+                <p class="card-text">As a patch of light kindling the energy hidden in matter are creatures of the cosmos cosmic ocean Apollonius of Perga two ghostly white figures in coveralls and helmets are soflty dancing? Prime number two ghostly white figures in coveralls and helmets are soflty dancing dispassionate extraterrestrial observer citizens of distant epochs invent the universe a still more glorious dawn awaits.</p>
+              </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
-    </div>
-  </section>
-  
-  <!-- Footer Section -->
-  <section class="footer_banner" id="contact">
-    <div class="row footer-container">
-      <div class="col-lg-6 col-sm-12">
-        <h2 class="footer-header">Contact Us</h2>
-        <p class="contact_info">Quantum Diamond Technologies Inc.<br/>
-          28 Dane Street Somerville,<br/>
-          MA 02143</p>
       </div>
-      <div class="col-lg-6 col-sm-12">
-        <div id="map"></div>
+    </section>
+    
+    <!-- Footer Section -->
+    <section class="footer_banner" id="contact">
+      <div class="row footer-container">
+        <div class="col-lg-6 col-sm-12">
+          <h2 class="footer-header">Contact Us</h2>
+          <p class="contact_info">Quantum Diamond Technologies Inc.<br/>
+            28 Dane Street Somerville,<br/>
+            MA 02143</p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div id="map"></div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</div>
+  <!-- Main Container Ends --> 
 </div>
-<!-- Copyrights Section -->
-<div class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</div>
-<!-- Main Container Ends --> 
-
 <script src="js/map.js"></script> 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
