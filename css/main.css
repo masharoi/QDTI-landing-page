@@ -1,14 +1,5 @@
 @charset "utf-8";
 /* Body */
-body {
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	font-style: normal;
-	font-weight: 200;
-	position: relative;
-}
 section {
 	min-height: 100vh;
 }
@@ -53,42 +44,31 @@ hr {
 	position: absolute;
 	top: 0;
 	right: 25px;
-	font-size: 36px;
+	font-size: 46px;
 	margin-left: 50px;
 }
 .openbtn {
 	mix-blend-mode: exclusion;
-	font-size: 30px;
+	font-size: 46px;
 	right: 0;
 	top: 0;
 	cursor: pointer;
 	background-color: transparent;
 	color: white;
-	padding: 10px 15px;
+	padding: 10px 30px;
 	border: none;
 	position: fixed;
 	z-index: 1;
 }
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-	.sidebar {
-		padding-top: 15px;
-	}
-	.sidebar a {
-		font-size: 18px;
-	}
-}
-.small-sidebar {
-	visibility: collapse;
-}
+
 .logo {
 	z-index: 2;
 	border-radius: 50%;
-	width: 50px;
+	width: 60px;
 	padding: 5px;
 	position: fixed;
 	top: 0;
-	margin: 10px;
+	margin:19px 25px;
 }
 nav {
 	mix-blend-mode: exclusion;
@@ -98,11 +78,7 @@ nav {
 	width: 100%;
 	padding: 15px 50px;
 }
-header nav ul {
-	list-style: none;
-	float: right;
-	position: relative;
-}
+
 nav ul li {
 	color: black;
 	font-size: 18px;
@@ -119,59 +95,48 @@ ul li a:hover {
 	color: white;
 	text-decoration: none;
 }
-/* Hero Section */
-.hero_header {
-	color: #FFFFFF;
-	text-align: left;
-	margin-top: 11%;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 5%;
-	letter-spacing: 4px;
+/* About Section */
+.about-header {
+	font-size: 3.5em;
+	white-space: nowrap;
 }
-.hero {
+#about {
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: 'Khula', sans-serif;
-	padding-top: 200px;
-	padding-bottom: 100px;
+	color: #FFFFFF;
+	padding: 15% 36% 50px 15%;
 	background-color: #140021;
+	line-height: 2;
 }
 .tagline {
-	text-align: left;
-	color: #FFFFFF;
-	margin-top: 1%;
-	font-weight: 300;
-	letter-spacing: 1px;
-	margin-left: 5%;
-	margin-right: 40%;
-	line-height: 1.6;
-	font-size: 1.5em;
+	margin-top: 20px;
+	font-size: 1.4em;
 }
-/* About Section */
-#about-imaging {
+/* Technologies Section */
+#technologies-imaging {
 	display: none;
 	font-size: 0.9em;
 }
-#about-sensor {
+#technologies-sensor {
 	display: none;
 	font-size: 0.9em;
 }
-#about-imaging .card .card-body {
+#technologies-imaging .card .card-body {
 	margin: 20px;
 }
-#about-sensor .card .card-body {
+#technologies-sensor .card .card-body {
 	margin: 20px;
 }
-#about-imaging .card .card-body a {
+#technologies-imaging .card .card-body a {
 	text-align: right;
 	cursor: pointer;
 }
-#about-sensor .card .card-body a {
+#technologies-sensor .card .card-body a {
 	text-align: right;
 	cursor: pointer;
 }
-#about {
+#technologies {
 	display: inline-block;
 	background: gray;
 	padding: 8% 15%;
@@ -232,17 +197,17 @@ ul li a:hover {
 	font-size: 1.5em;
 	line-height: 1.4em;
 }
-.benefits_list {
+.benefits-list {
 	margin: 10% 5% 10% 0;
 }
-.benefits_list li {
+.benefits-list li {
 	list-style: none;
 	padding: 1em 0;
 	font-size: 1.5em;
 	text-align: right;
 	cursor: pointer;
 }
-.benefits_list li img {
+.benefits-list li img {
 	width: 35px;
 }
 .header {
@@ -259,7 +224,7 @@ ul li a:hover {
 .benefits_container {
 	margin: 5%;
 }
-.text_column {
+.text-column {
 	text-align: left;
 	font-weight: lighter;
 	line-height: 1.5em;
@@ -269,10 +234,7 @@ ul li a:hover {
 	border-left: 10px solid rgba(56, 96, 0, 0.7);
 	padding-left: 15px;
 }
-.column {
-	float: left;
-	width: 50%;
-}
+
 .text-column-small {
 	color: black;
 	font-weight: normal;
@@ -310,11 +272,6 @@ ul li a:hover {
 	color: #818181;
 	transition: 0.3s;
 }
-.carousel {
-	padding: 6% 0;
-	background: #b7b7b7;
-	font-family: 'Khula', sans-serif;
-}
 .member-info {
 	padding: 25px;
 	color: white;
@@ -342,12 +299,7 @@ ul li a:hover {
 	margin: 20% 15% 20% 5%;
 }
 /* More info */
-.footer_column {
-	width: 50%;
-	text-align: center;
-	padding-top: 30px;
-	float: left;
-}
+
 .footer_banner {
 	background-color: #fffdfc;
 	padding: 13% 15% 10% 5%;
@@ -388,18 +340,18 @@ ul li a:hover {
 		font-size: 1em;
 		line-height: 1em;
 	}
-	.text_column {
+	.text-column {
 		display: none;
 	}
 	.text-column-small {
 		display: block;
 		font-size: 1.2em;
 	}
-	.benefits_list li {
+	.benefits-list li {
 		padding: 0.88em 0;
 		font-size: 1.3em;
 	}
-	/* about*/
+	/* technologies*/
 	.sensor-tech-card {
 		font-size: 0.80em;
 	}
@@ -462,15 +414,7 @@ ul li a:hover {
 		margin-left: 0px;
 		border-radius: 50%;
 	}
-	.container header nav {
-		margin-top: 0px;
-		margin-right: 0px;
-		margin-bottom: 0px;
-		margin-left: 0px;
-		width: 100%;
-		float: none;
-		display: none;
-	}
+
 	nav ul li {
 		margin-top: 0px;
 		margin-right: 0px;
@@ -487,7 +431,7 @@ ul li a:hover {
 		background-color: #2D9AB7;
 		background-image: none;
 	}
-	.hero_header {
+	.about-header {
 		padding-left: 10px;
 		padding-right: 10px;
 		line-height: 22px;
@@ -504,21 +448,7 @@ ul li a:hover {
 		margin-left: 0px;
 		color: #043745;
 	}
-	.container header nav {
-		margin-top: 0px;
-		margin-right: 0px;
-		margin-bottom: 0px;
-		margin-left: 0px;
-		width: 100%;
-		float: none;
-		overflow: auto;
-		display: inline-block;
-		background: #52bad5;
-	}
-	header nav ul {
-		padding: 0px;
-		float: none;
-	}
+
 	nav ul li {
 		margin-top: 0px;
 		margin-right: 0px;
@@ -529,7 +459,7 @@ ul li a:hover {
 		padding-top: 8px;
 		padding-bottom: 8px;
 	}
-	.text_column {
+	.text-column {
 		width: 100%;
 		text-align: left;
 		padding-top: 0px;
@@ -551,13 +481,9 @@ ul li a:hover {
 }
 /* Smaller Desktops */
 @media (min-width: 500px) and (max-width: 1100px) {
-	.small-sidebar {
-		visibility: visible;
-	}
-	header nav ul {
-		visibility: collapse;
-	}
-	/* about */
+	/* navigation */
+
+	/* technologies */
 	.sensor-tech-card {
 		font-size: 0.85em;
 	}
@@ -567,7 +493,7 @@ ul li a:hover {
 	.card-body .btn {
 		margin: 0 25%;
 	}
-	#about {
+	#technologies {
 		display: inline-block;
 		padding: 0 30px;
 	}
@@ -593,27 +519,27 @@ ul li a:hover {
 		font-size: 1.1em;
 		text-align: left;
 	}
-	.text_column {
+	.text-column {
 		display: none;
 	}
 	.text-column-small {
 		display: block;
 		text-align: left;
 	}
-	.benefits_list li {
+	.benefits-list li {
 		padding: 0.88em 0;
 		font-size: 1.5em;
 		text-align: left;
 		white-space: nowrap;
 	}
-	.tagline {
-		margin-left: 10%;
-		margin-right: 20%;
-		line-height: 2.4;
-		font-size: 0.9em;
+
+  /* About */
+	#about {
+		padding: 25% 20% 0px 10%;
 	}
-	.hero_header {
-		margin-left: 10%;
+	.about-header {
+		font-size: 2.7em;
+		white-space: normal;
 	}
 	/* team */
 	.member-info {
@@ -634,20 +560,12 @@ ul li a:hover {
 	.team-caption {
 		margin: 70px 0 0 0;
 	}
-	.carousel {
-		padding: 0px;
-	}
 }
 /* Small Desktops */
 @media (min-width: 1101px) and (max-width: 1200px) {
-	.small-sidebar {
-		visibility: visible;
-	}
-	header nav ul {
-		visibility: collapse;
-	}
-	/* about */
-	#about {
+
+	/* technologies */
+	#technologies {
 		display: inline-block;
 		padding: 50px 200px;
 	}
@@ -661,37 +579,27 @@ ul li a:hover {
 	.text-row {
 		font-size: 1.1em;
 	}
-	.text_column {
+	.text-column {
 		display: none;
 	}
 	.text-column-small {
 		display: block;
 		text-align: left;
 	}
-	.benefits_list {
+	.benefits-list {
 		text-align: left;
 	}
-	.benefits_list li {
+	.benefits-list li {
 		padding: 0.88em 0;
 		font-size: 1.5em;
 		text-align: left;
 	}
-	.benefits_list li img {
+	.benefits-list li img {
 		width: 25px;
 	}
-	.banner {
-		margin-top: 0px;
-		padding-top: 0px;
-	}
-	/* home */
-	.tagline {
-		margin-left: 10%;
-		margin-right: 20%;
-		line-height: 2.4;
-		font-size: 1em;
-	}
-	.hero_header {
-		margin-left: 10%;
+	/* About */
+	#about {
+		padding: 20% 20% 50px 15%;
 	}
 	/* team */
 	.member-info {
@@ -712,49 +620,43 @@ ul li a:hover {
 	.team-caption {
 		margin: 70px 0 0 0;
 	}
-	.carousel {
-		padding: 0px;
-	}
 }
 /* Bigger Desktops */
 @media (min-width: 1201px) and (max-width: 1450px) {
-	/* navigation */
-	.small-sidebar {
-		visibility: visible;
-	}
-	header nav ul {
-		visibility: collapse;
-	}
-	/*	about*/
+
+	/*	technologies*/
 	.sensor-tech-card {
 		font-size: 0.9em;
 	}
 	.magnetic-imaging-card {
 		font-size: 0.9em;
 	}
-	#about {
+	#technologies {
 		display: inline-block;
 		padding: 15% 2%;
 	}
 	/* Benefits */
-	.benefits_list li {
+	.benefits-list li {
 		padding: 1em 0;
 		font-size: 1em;
 	}
 	.text-row {
 		font-size: 1.1em;
 	}
-	.text_column {
+	.text-column {
 		font-size: 1em;
 	}
-	/* home */
-	.tagline {
-		margin-left: 7%;
-		margin-right: 30%;
-		line-height: 1.4;
-		font-size: 1.3em;
+	/* About */
+	#about {
+			padding: 20% 20% 50px 15%;
 	}
-	.hero_header {
-		margin-left: 7%;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {
+		padding-top: 15px;
+	}
+	.sidebar a {
+		font-size: 18px;
 	}
 }

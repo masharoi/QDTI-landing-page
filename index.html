@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Khula:300,400" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -13,15 +13,15 @@
 
 <body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
 <!-- Main Container -->
-<div> 
-  <!-- navigation --> 
-  <a href="#hero" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
+<div>
+  <!-- navigation -->
+  <a href="#about" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
   <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
-  <div id="rightSidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="right-sidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="navbar  navbar-dark" id="navbar-scroll">
       <ul class="navbar-nav">
-        <li class="nav-item"><a href="#hero" class="navbar-link nav-link">About</a></li>
-        <li class="nav-item"><a href="#about" class="navbar-link nav-link">Technology</a></li>
+        <li class="nav-item"><a href="#about" class="navbar-link nav-link">About</a></li>
+        <li class="nav-item"><a href="#technologies" class="navbar-link nav-link">Technology</a></li>
         <li class="nav-item"><a href="#benefits" class="navbar-link nav-link">Why QDTI</a></li>
         <li class="nav-item"><a href="#team" class="navbar-link nav-link">Team</a></li>
         <li class="nav-item"><a href="#contact" class="navbar-link nav-link">Contact</a></li>
@@ -31,19 +31,18 @@
       </ul>
     </nav>
   </div>
-  <!-- Hero Section -->
-  <div  >
-    <section class="hero" id="hero" style="background-image: url('images/fractal6.jpg');">
-      <h2 class="hero_header">Quantum Diamond Technologies</h2>
+  <!-- About Section -->
+  <div>
+    <section id="about" style="background-image: url('images/fractal6.jpg');">
+      <h2 class="about-header">Quantum Diamond Technologies</h2>
       <p class="tagline" >QDTI is a technology company based in Somerville, Massachusetts, and seeking to bring a new set of technologies from the lab to commercial application. Founded with a team of leading quantum scientists from Harvard University, QDTI is commercializing a new class of nanoscale devices that rely on the fundamental properties of quantum mechanics to allow new applications in sensing, metrology, computing and other fields.</p>
     </section>
-    
-    <!-- About Section -->
-    
-    <section id="about" style="background-image: url('images/rainbow-plate2.jpeg');">
-      <div class="row default-about">
-        <div class="col col-xl-6 col-sm-12"> 
-          <!--    <div class="card magnetic-imaging-card"> <img src="images/rainbow-plate2.jpeg" class="card-img-top" alt="..."> -->
+
+    <!-- Technologies Section -->
+
+    <section id="technologies" style="background-image: url('images/rainbow-plate2.jpeg');">
+      <div class="row default-technologies">
+        <div class="col col-xl-6 col-sm-12">
           <div class="card" id="magnetic-imaging-card" style="background-color: rgba(245, 245, 245, 0.82);">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Magnetic Imaging Platform</h5>
@@ -52,8 +51,7 @@
             </div>
           </div>
         </div>
-        <div class="col col-xl-6 col-sm-12"> 
-          <!-- <div class="card sensor-tech-card"> <img src="images/physics.jpg" class="card-img-top" alt="..."> -->
+        <div class="col col-xl-6 col-sm-12">
           <div class="card" id="sensor-tech-card" style="background-color: rgba(245, 245, 245, 0.82);">
             <div class="card-body d-flex flex-column">
               <h5 class="card-title">Quantum Sensor Technology</h5>
@@ -63,7 +61,7 @@
           </div>
         </div>
       </div>
-      <div id="about-imaging">
+      <div id="technologies-imaging">
         <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
           <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
             <h5 class="card-title">Magnetic Imaging Platform</h5>
@@ -75,7 +73,7 @@
           </div>
         </div>
       </div>
-      <div id="about-sensor">
+      <div id="technologies-sensor">
         <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
           <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
             <h5 class="card-title">Quantum Sensor Technology</h5>
@@ -86,14 +84,14 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Benefits Section -->
     <section id="benefits">
       <h2 class="header">Why QDTI?</h2>
       <p class="text-row" >Detecting tiny concentrations of biomolecules such as proteins is complicated by the vast quantity of other material in complex biofluids such as blood or serum. Industry standard high-sensitivity assays rely on measuring light emitted from a fluorescent molecule label, or from the product of an enzyme label on a substrate. Filter leakage, detector noise, and nonspecific autofluorescence of the sample itself all produce backgrounds that compete with true signals. <span id="more-benefits-text">Ultrasensitive assays must correctly identify individual target molecules amid millions or billions of others, placing strict constraints on false positive signals. Technologies based on optical detection therefore require lengthy sample preparation to reduce backgrounds, necessitating large, complex, and expensive instruments. QDTI’s magnetic detection, in contrast, provides high sensitivity even in raw samples.  Biofluids are negligibly magnetic compared to magnetic particle labels, so there is no intrinsic sample background — the magnetic signal comes only from the labels.  In addition, the magnetic signal permeates through optically fluorescent or opaque samples, so that detection can be made directly in whole blood. </span><span class="more">Read More</span> </p>
       <div class="row">
         <div class="col-xl-6 col-sm-12">
-          <ul class="benefits_list">
+          <ul class="benefits-list">
             <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
               <div class="text-column-small"> Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated. </div>
             </li>
@@ -112,11 +110,11 @@
           </ul>
         </div>
         <div class="col-xl-6 col-sm-12">
-          <p class="text_column">Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated.</p>
+          <p class="text-column">Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated.</p>
         </div>
       </div>
     </section>
-    
+
     <!-- Team Section -->
     <section id="team">
       <div id="team-options">
@@ -180,7 +178,7 @@
         </div>
       </div>
     </section>
-    
+
     <!-- Footer Section -->
     <section class="footer_banner" id="contact">
       <div class="row footer-container">
@@ -198,14 +196,14 @@
   </div>
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</div>
-  <!-- Main Container Ends --> 
+  <!-- Main Container Ends -->
 </div>
-<script src="js/map.js"></script> 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSt4lOI0uHsAvpVn55clfbQ1pZNKi1dQY&callback=initMap"></script> 
+<script src="js/map.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSt4lOI0uHsAvpVn55clfbQ1pZNKi1dQY&callback=initMap"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

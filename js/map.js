@@ -124,6 +124,7 @@ function initMap() {
 
 	map.set('styles',styles);
 	
+	
 	var marker = new google.maps.Marker({
 		position: uluru,
 		map: map,
@@ -141,4 +142,8 @@ function initMap() {
 	   marker.addListener('click', function () {
             infowindow.open(map, marker);
         });
+}
+
+function animateCircle() {
+	
 }
