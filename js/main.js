@@ -59,33 +59,25 @@ $('.text-row .more').click(function () {
 // hide the technology info and show the expanded magnetic imaging platform.
 $('#magnetic-imaging-card button').click(function () {
 	//$('.sensor-tech-card').show("hide", { direction: "right" }, 2000);
-	$('#magnetic-imaging-card').hide();
-	$('#sensor-tech-card').hide();
-
-	$('#technologies-imaging').show();
+	$('#default-technologies').hide();
+	$('#technologies-imaging').css('display', 'flex');
 });
 
 // hide the expanded magnetic imaging platform and show the technology info.
 $('#technologies-imaging .card .card-body a').click(function () {
-	$('#magnetic-imaging-card').show();
-	$('#sensor-tech-card').show();
-
+	$('#default-technologies').show();
 	$('#technologies-imaging').hide();
 });
 
 // hide the technology info and show the expanded quantum sensor
 $('#sensor-tech-card button').click(function () {
-	$('#magnetic-imaging-card').hide();
-	$('#sensor-tech-card').hide();
-
-	$('#technologies-sensor').show();
+	$('#default-technologies').hide();
+	$('#technologies-sensor').css('display', 'flex');
 });
 
 // show the technology info and hide the expanded quantum sensor
 $('#technologies-sensor .card .card-body a').click(function () {
-	$('#magnetic-imaging-card').show();
-	$('#sensor-tech-card').show();
-
+	$('#default-technologies').show();
 	$('#technologies-sensor').hide();
 });
 

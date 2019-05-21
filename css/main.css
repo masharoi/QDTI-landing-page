@@ -114,55 +114,54 @@ ul li a:hover {
 	font-size: 1.4em;
 }
 /* Technologies Section */
-#technologies-imaging {
+.technologies-more {
 	display: none;
-	font-size: 0.9em;
+	font-size: 0.8em;
+	padding: auto;
+	flex-direction: row;
+	align-items: center;
+	height: 100vh;
+	padding: 0 100px;
 }
-#technologies-sensor {
-	display: none;
-	font-size: 0.9em;
+.technologies-more .card .card-body {
+	margin: 15px;
 }
-#technologies-imaging .card .card-body {
-	margin: 20px;
-}
-#technologies-sensor .card .card-body {
-	margin: 20px;
-}
-#technologies-imaging .card .card-body a {
+.technologies-more .card .card-body a {
 	text-align: right;
 	cursor: pointer;
 }
-#technologies-sensor .card .card-body a {
-	text-align: right;
-	cursor: pointer;
+
+#default-technologies {
+	display:flex;
+	align-items: center;
+	height:100vh;
 }
 #technologies {
-	display: inline-block;
 	background: gray;
-	padding: 8% 15%;
+	padding:0 14%;
 	font-family: 'Khula', sans-serif;
-	width: 100%;
 	background-size: cover;
 }
 #sensor-tech-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	padding: 20px;
-	height: 600px;
-	margin: 70px 50px;
+	height: 70vh;
+	margin: 0 50px;
+
 }
 #magnetic-imaging-card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	padding: 20px;
-	background-color: #f1f1f1;
-	height: 600px;
-	margin: 70px 50px;
+	height: 70vh;
+	margin: 0 50px;
 }
 .card-body {
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 .card-title {
 	font-size: 1.8em;
 	letter-spacing: -0.09em;
+	white-space: nowrap;
 }
 .card-body .btn {
 	background: #580060;
@@ -170,6 +169,7 @@ ul li a:hover {
 	margin: 0 30%;
 	white-space: nowrap;
 	height: 55px;
+	min-width: 160px;
 	text-align: center;
 	line-height: 50px;
 	font-size: 1em;
@@ -181,6 +181,7 @@ ul li a:hover {
 /* benefits */
 #more-benefits-text {
 	display: none;
+
 }
 #benefits {
 	padding: 6% 10% 6% 6%;
@@ -484,18 +485,36 @@ ul li a:hover {
 	/* navigation */
 
 	/* technologies */
-	.sensor-tech-card {
-		font-size: 0.85em;
+	.technologies-more {
+		font-size: 0.7em;
+		padding: 50px;
+		height: auto;
 	}
-	.magnetic-imaging-card {
-		font-size: 0.85em;
+	.card-title {
+		white-space: normal;
+	}
+	#sensor-tech-card {
+		padding: 0px;
+		margin: 50px 65px;
+		height:auto;
+	}
+	#magnetic-imaging-card {
+		padding: 0px;
+		margin: 50px 65px;
+		height:auto;
+	}
+	.card-body {
+		font-size: 1.5em;
+	}
+
+	#technologies {
+		padding: 0 0.5%;
+	}
+	#default-technologies {
+		height:auto;
 	}
 	.card-body .btn {
-		margin: 0 25%;
-	}
-	#technologies {
-		display: inline-block;
-		padding: 0 30px;
+		margin: 0 auto;
 	}
 	/* Footer */
 	#map {
@@ -535,7 +554,7 @@ ul li a:hover {
 
   /* About */
 	#about {
-		padding: 25% 20% 0px 10%;
+		padding: 25% 20% 10px 10%;
 	}
 	.about-header {
 		font-size: 2.7em;
@@ -562,12 +581,28 @@ ul li a:hover {
 	}
 }
 /* Small Desktops */
-@media (min-width: 1101px) and (max-width: 1200px) {
+@media (min-width: 1101px) and (max-width: 1199px) {
 
 	/* technologies */
+	.technologies-more {
+		font-size: 0.7em;
+	}
+	#sensor-tech-card {
+		padding: 20px;
+		margin: 50px 200px;
+	}
+	#magnetic-imaging-card {
+		padding: 20px;
+		margin: 50px 200px;
+	}
+	.card-body {
+		font-size: 1.8em;
+	}
 	#technologies {
-		display: inline-block;
-		padding: 50px 200px;
+		padding: 0 1%;
+	}
+	#default-technologies {
+		height:auto;
 	}
 	.card-body .btn {
 		margin: 0 25%;
@@ -622,18 +657,31 @@ ul li a:hover {
 	}
 }
 /* Bigger Desktops */
-@media (min-width: 1201px) and (max-width: 1450px) {
+@media (min-width: 1200px) and (max-width: 1450px) {
 
-	/*	technologies*/
+	/*technologies */
+	.technologies-more {
+		font-size: 0.7em;
+	}
+	#sensor-tech-card {
+		padding: 5px 10px;
+		margin: 0 20px;
+	}
+	#magnetic-imaging-card {
+		padding: 5px 10px;
+		margin: 0 20px;
+	}
 	.sensor-tech-card {
-		font-size: 0.9em;
+		font-size: 0.75em;
 	}
 	.magnetic-imaging-card {
-		font-size: 0.9em;
+		font-size: 0.75em;
 	}
 	#technologies {
-		display: inline-block;
-		padding: 15% 2%;
+		padding: 0 5%;
+	}
+	.card-title {
+		white-space: normal;
 	}
 	/* Benefits */
 	.benefits-list li {
@@ -650,6 +698,21 @@ ul li a:hover {
 	#about {
 			padding: 20% 20% 50px 15%;
 	}
+}
+
+/* Even Bigger Desktops */
+@media (min-width: 1450px) and (max-width: 1800px) {
+	/* Texhnologies */
+	#technologies {
+		padding:0 6%;
+	}
+	#sensor-tech-card {
+		padding: 20px 10px;
+	}
+	#magnetic-imaging-card {
+		padding: 20px 10px;
+	}
+
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
