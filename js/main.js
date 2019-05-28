@@ -48,7 +48,7 @@ $('.navbar-link').click(function () {
 $('.text-row .more').click(function () {
 	if ($('.text-row .more').text() == 'Read More') {
 		$('#more-benefits-text').show();
-		$('.text-row .more').text('Less');
+		$('.text-row .more').text('Read Less');
 	} else {
 		$('#more-benefits-text').hide();
 		$('.text-row .more').text('Read More');

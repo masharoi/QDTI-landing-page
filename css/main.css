@@ -219,7 +219,6 @@ ul li a:hover {
 .more {
 	color: #580060;
 	font-weight: bold;
-	white-space: nowrap;
 	cursor: pointer;
 }
 .benefits_container {
@@ -299,23 +298,36 @@ ul li a:hover {
 .last-member-info {
 	margin: 20% 15% 20% 5%;
 }
-/* More info */
+/* Contact Us info */
 
-.footer_banner {
+.contact-container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+}
+.contact-info-container {
+	display:flex;
+	flex-direction:column;
+	justify-content: center;
+	padding-left: 30px;
+	white-space: nowrap;
+
+}
+
+#contact {
 	background-color: #fffdfc;
-	padding: 13% 15% 10% 5%;
 }
 .footer-header {
-	text-align: right;
 	margin: 0 5% 5% 0;
+	color: rgb(56, 96, 0);
 }
 #map {
 	background: black;
 	height: 500px;
 	width: 600px;
 }
-.contact_info {
-	text-align: right;
+.contact-info {
 	font-weight: 300;
 	line-height: 1.5em;
 	margin: 0 5% 5% 0;
@@ -368,14 +380,14 @@ ul li a:hover {
 		width: 330px;
 		margin: 0 auto;
 	}
-	.contact_info {
+	.contact-info {
 		text-align: center;
 		font-size: 1.2em;
 	}
 	.footer-header {
 		text-align: center;
 	}
-	.footer_banner {
+	#contact {
 		background-color: #fffdfc;
 		padding: 30% 5% 2% 5%;
 	}
@@ -516,23 +528,25 @@ ul li a:hover {
 	.card-body .btn {
 		margin: 0 auto;
 	}
-	/* Footer */
+	/* contact us */
+	.contact-container {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		padding: 15% 25%;
+	}
+	.contact-info-container {
+		justify-content: flex-start;
+		padding:0;
+	}
 	#map {
 		height: 300px;
 		width: 400px;
-		margin: 0 auto;
 	}
-	.contact_info {
-		text-align: center;
+
+	.contact-info {
 		font-size: 1.4em;
 	}
-	.footer-header {
-		text-align: center;
-	}
-	.footer_banner {
-		background-color: #fffdfc;
-		padding: 30% 10% 2% 15%;
-	}
+
 	/* Benefits */
 	.text-row {
 		font-size: 1.1em;
@@ -582,7 +596,16 @@ ul li a:hover {
 }
 /* Small Desktops */
 @media (min-width: 1101px) and (max-width: 1199px) {
-
+	/* contact us */
+	.contact-container {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		padding-left: 30%;
+	}
+	.contact-info-container {
+		justify-content: flex-start;
+		padding:0;
+	}
 	/* technologies */
 	.technologies-more {
 		font-size: 0.7em;
@@ -686,13 +709,13 @@ ul li a:hover {
 	/* Benefits */
 	.benefits-list li {
 		padding: 1em 0;
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	.text-row {
 		font-size: 1.1em;
 	}
 	.text-column {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 	/* About */
 	#about {
@@ -702,7 +725,7 @@ ul li a:hover {
 
 /* Even Bigger Desktops */
 @media (min-width: 1450px) and (max-width: 1800px) {
-	/* Texhnologies */
+	/* Technologies */
 	#technologies {
 		padding:0 6%;
 	}

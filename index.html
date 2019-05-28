@@ -13,9 +13,10 @@
 
 <body data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
 <!-- Main Container -->
-<div>
+
   <!-- navigation -->
-  <a href="#about" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
+  <header>
+  <a href="#about" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt="Company Logo"></a>
   <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
   <div id="right-sidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <nav class="navbar  navbar-dark" id="navbar-scroll">
@@ -31,8 +32,10 @@
       </ul>
     </nav>
   </div>
+   </header>
+   <div>
   <!-- About Section -->
-  <div>
+  <main>
     <section id="about" style="background-image: url('images/fractal6.jpg');">
       <h2 class="about-header">Quantum Diamond Technologies</h2>
       <p class="tagline" >QDTI is a technology company based in Somerville, Massachusetts, and seeking to bring a new set of technologies from the lab to commercial application. Founded with a team of leading quantum scientists from Harvard University, QDTI is commercializing a new class of nanoscale devices that rely on the fundamental properties of quantum mechanics to allow new applications in sensing, metrology, computing and other fields.</p>
@@ -177,25 +180,29 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
-    <section class="footer_banner" id="contact">
-      <div class="row footer-container">
-        <div class="col-lg-6 col-sm-12">
-          <h2 class="footer-header">Contact Us</h2>
-          <p class="contact_info">Quantum Diamond Technologies Inc.<br/>
-            28 Dane Street Somerville,<br/>
-            MA 02143</p>
-        </div>
-        <div class="col-lg-6 col-sm-12">
+    <!-- Contact Us Section -->
+    <section id="contact">
+      <div class="row contact-container">
+        <div>
           <div id="map"></div>
         </div>
+        <div class="contact-info-container">
+          <h2 class="footer-header">Contact Us</h2>
+          <div class="contact-info">Quantum Diamond Technologies Inc.<br/>
+            28 Dane Street Somerville,<br/>
+            MA 02143<br/></div>
+          <div class="contact-info">info@quantumdiamondtech.com</div>
+        </div>
+
+
       </div>
     </section>
   </div>
+</main>
   <!-- Copyrights Section -->
-  <div class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</div>
+  <footer class="copyright">&copy;2017 - Quantum Diamond Technologies Inc.</footer>
   <!-- Main Container Ends -->
-</div>
+
 <script src="js/map.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
