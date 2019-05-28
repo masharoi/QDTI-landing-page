@@ -81,24 +81,7 @@ $('#technologies-sensor .card .card-body a').click(function () {
 	$('#technologies-sensor').hide();
 });
 
-// toggle core team/board view
-$('#core-team').click(function() {
-	if ($('#core-team-option').css('display') == 'none') {
-		$('#core-team-option').show();
-		$('#advisory-board-option').hide();
-		$('#advisory-board').css('color', '#818181');
-		$('#core-team').css('color', '#f1f1f1');
-	}
-});
 
-$('#advisory-board').click(function() {
-	if ($('#advisory-board-option').css('display') == 'none') {
-		$('#advisory-board-option').show();
-		$('#core-team-option').hide();
-		$('#advisory-board').css('color', '#f1f1f1');
-		$('#core-team').css('color', '#818181');
-	}
-});
   $(document).ready(function(){
     $('.scrollspy').scrollSpy();
   });

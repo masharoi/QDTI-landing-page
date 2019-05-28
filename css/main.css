@@ -244,67 +244,65 @@ ul li a:hover {
 	display: none;
 }
 /* Team */
+.linkedin-link {
+	font-size: 0.8em;
+	color:#4875B4;
+}
+.linkedin-link:hover {
+	text-decoration:none;
+	color:#4875B4;
+}
+.team-header {
+		color: white;
+		width: 240px;
+}
 #team {
 	background: #100016;
+	padding: 5% 3% 2% 8%;
 }
-#core-team {
-	display: inline;
-	padding-right: 20px;
-	color: #f1f1f1;
-}
-#core-team:hover {
-	color: #f1f1f1!important;
-}
-#advisory-board:hover {
-	color: #f1f1f1!important;
+
+#core-team-option {
+	padding-top: 3%;
 }
 #advisory-board-option {
-	display: none;
+	display: flex;
+	padding-top: 3%;
 }
-#advisory-board {
-	display: inline;
-	padding-left: 20px;
+.team-subheader h3 {
+	color: rgb(56, 96, 0);
+	padding-left: 10px;
+	padding-right: 10px;
+	width: wrap;
 }
-#team-options {
-	text-align: center;
-	padding-top: 55px;
-	cursor: pointer;
-	color: #818181;
-	transition: 0.3s;
+.team-subheader {
+	padding-top:30px;
+	position:relative;
+	display:inline-block;
 }
+
 .member-info {
-	padding: 25px;
 	color: white;
 	font-size: 1.4em;
-	text-align: center;
 }
-.first-member-info {
-	margin: 20% 5% 0 15%;
-}
+
 .team-name {
-	text-align: center;
 	padding-top: 20px;
 }
 .member-img {
-	width: 200px;
-	height: 200px;
-	margin: auto;
+	width: 120px;
+	height: 120px;
 	display: block;
 	border-radius: 50%;
 }
-.middle-member-info {
-	margin: 20% 10% 20% 10%;
-}
-.last-member-info {
-	margin: 20% 15% 20% 5%;
-}
+
 /* Contact Us info */
 
 .contact-container {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	padding-top: 50px;
+	height:100vh;
+	background: #e0e5dc;
 }
 .contact-info-container {
 	display:flex;
@@ -315,14 +313,12 @@ ul li a:hover {
 
 }
 
-#contact {
-	background-color: #fffdfc;
-}
 .footer-header {
 	margin: 0 5% 5% 0;
 	color: rgb(56, 96, 0);
 }
 #map {
+	border-radius: 5px;
 	background: black;
 	height: 500px;
 	width: 600px;
@@ -532,19 +528,15 @@ ul li a:hover {
 	.contact-container {
 		flex-direction: column-reverse;
 		align-items: flex-start;
-		padding: 15% 25%;
+		padding-left:15%;
 	}
 	.contact-info-container {
 		justify-content: flex-start;
 		padding:0;
 	}
 	#map {
-		height: 300px;
-		width: 400px;
-	}
-
-	.contact-info {
-		font-size: 1.4em;
+		height: 350px;
+		width: 500px;
 	}
 
 	/* Benefits */
@@ -575,24 +567,17 @@ ul li a:hover {
 		white-space: normal;
 	}
 	/* team */
-	.member-info {
-		padding: 0px;
+	.team-name {
+		font-size: 0.8em;
 	}
-	.first-member-info {
-		margin: 8% 8% 3% 8%;
+	.team-text {
+		font-size: 0.7em;
 	}
 	.member-img {
 		width: 100px;
+		height:100px;
 	}
-	.middle-member-info {
-		margin: 0 8% 3% 8%;
-	}
-	.last-member-info {
-		margin: 0 8% 13% 8%;
-	}
-	.team-caption {
-		margin: 70px 0 0 0;
-	}
+
 }
 /* Small Desktops */
 @media (min-width: 1101px) and (max-width: 1199px) {
@@ -601,6 +586,7 @@ ul li a:hover {
 		flex-direction: column-reverse;
 		align-items: flex-start;
 		padding-left: 30%;
+
 	}
 	.contact-info-container {
 		justify-content: flex-start;
@@ -663,17 +649,16 @@ ul li a:hover {
 	.member-info {
 		padding: 0px;
 	}
-	.first-member-info {
-		margin: 8% 8% 3% 8%;
-	}
+
 	.member-img {
 		width: 100px;
+		height: 100px;
 	}
-	.middle-member-info {
-		margin: 0 8% 3% 8%;
+	.team-name {
+		font-size: 0.9em;
 	}
-	.last-member-info {
-		margin: 0 8% 13% 8%;
+	.team-text {
+		font-size: 0.8em;
 	}
 	.team-caption {
 		margin: 70px 0 0 0;
