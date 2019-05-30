@@ -184,7 +184,7 @@ ul li a:hover {
 
 }
 #benefits {
-	padding: 6% 10% 6% 6%;
+	padding: 6% 10% 0 6%;
 	font-family: 'Khula', sans-serif;
 	background: white;
 	background-size: 100vw 100vh;
@@ -258,7 +258,7 @@ ul li a:hover {
 }
 #team {
 	background: #100016;
-	padding: 5% 3% 2% 8%;
+	padding: 5% 3% 0 8%;
 }
 
 #core-team-option {
@@ -294,6 +294,85 @@ ul li a:hover {
 	display: block;
 	border-radius: 50%;
 }
+/* news & publications */
+#news-preview {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items:center;
+	height: 45vh;
+	margin: 0 15%;
+}
+#publications-preview {
+	display:flex;
+	flex-direction:column;
+	justify-content: space-around;
+	height: 30vh;
+	margin: 0 15%;
+}
+.publications-preview-item {
+		font-size: 1.3em;
+		color:black;
+		font-weight: bold;
+}
+
+.publications-preview-item:hover {
+	text-decoration: none;
+	color: #580060;
+}
+#publications-news {
+	padding-top: 80px;
+	background-color: white;
+}
+.expand-view-link {
+		margin: 0 15%;
+		display: flex;
+		justify-content: flex-end;
+		font-size: 1.5em;
+		color: #580060;
+		font-weight: bold;
+}
+.expand-view-link:hover {
+	text-decoration: none;
+	color: #580060;
+}
+.expand-view-image {
+		height: 20px;
+		align-self: center;
+		margin-top: 5px;
+		margin-left: 10px;
+}
+.publications-item-image {
+		height: 20px;
+		align-self: center;
+		margin-left: 10px;
+}
+.news-logo {
+	width: 80px;
+	height: 40px;
+}
+#news-date {
+		top: 30px;
+		left: -59px;
+}
+.news-preview-item h3 {
+	color:  rgb(56, 96, 0);
+	font-size: 0.8em;
+	top: 55px;
+	position:absolute;
+	left: -85px;
+	transform: rotate(-90deg);
+}
+.news-preview-item {
+	position:relative;
+		font-weight: bold;
+	font-size: 1.4em;
+	line-height: 1.4;
+	width: 25%;
+	height: 50%;
+	border-left: solid rgba(56, 96, 0, 0.7) 5px;
+	padding-left: 10px;
+}
 
 /* Contact Us info */
 
@@ -314,7 +393,7 @@ ul li a:hover {
 }
 
 .footer-header {
-	margin: 0 5% 5% 0;
+	padding: 0 5% 5% 0;
 	color: rgb(56, 96, 0);
 }
 #map {
@@ -326,7 +405,7 @@ ul li a:hover {
 .contact-info {
 	font-weight: 300;
 	line-height: 1.5em;
-	margin: 0 5% 5% 0;
+	padding: 0 5% 5% 0;
 	font-size: 2em;
 	font-family: 'Khula', sans-serif;
 }

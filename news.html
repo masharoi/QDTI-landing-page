@@ -12,10 +12,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <title>News</title>
 </head>
-<body style="background-image:url('images/assay.jpg')">
+<body >
 <!-- navigation -->
 <header>
-	<a href="index.html" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt=""></a>
+	<a href="index.html" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt="qdti logo"></a>
 	<button class="openbtn sticky" onclick="openNav()">&#9776;</button>
 	<div id="right-sidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<nav class="navbar  navbar-dark" id="navbar-scroll">
@@ -33,38 +33,49 @@
 	</div>
 </header>
 
-<main class="container" style="background-color: rgba(245, 245, 245, 0.82); ">
-  <section id="news">
-    <h2 class="news-header">News</h2>
-    <ul class="timeline">
-      <li>
-        <h5 class="news-subheader">July 2018</h5>
-        <h4>The MassVentures START program awards QDTI $100k</h4>
-        <p>The MassVentures START program, a program of the Commonwealth of Massachusetts designed to support early-stage, high-growth companies in the state, has awarded QDTI a $100k grant in its 2018 program. The START program is designed to help Massachusetts technology startups to leverage their SBIR funding to grow and to continue to develop their critical technology.</p>
-      </li>
-      <li >
-        <h5 class="news-subheader">November 2017</h5>
-        <h4>NSF awards QDTI a grant to support rapid sample transfer of samples for quantum magnetic sensors</h4>
-        <p>The National Science Foundation (NSF) has awarded QDTI a Phase I SBIR grant to support the development of a novel technology for transferring medical biofluid and other samples onto diamond magnetic imaging sensors. This technology will allow samples to be transferred quickly and cleanly onto an imaging sensor for a variety of high-throughput testing applications. NSF is a key federal science funding agency.</p>
-      </li>
-      <li >
-        <h5 class="news-subheader">September 2017</h5>
-        <h4>NIST awards a Phase II grant to support QDTI’s development of NV imaging to support single magnetic nanoparticle development</h4>
-        <p>Following a successful Phase I SBIR research program, the National Institute of Standards and Technology (NIST), a key federal science and technology agency, has awarded QDTI a Phase II SBIR contract to continue development of a platform for high-speed single magnetic nanoparticle analysis using the company’s quantum NV diamond sensing technology. Magnetic nanoparticles and beads are a key component of many biomedical diagnostics products, but the lack of a technology allowing individual magnetic particles to be tested quickly has hindered quality control and further technical development. QDTI’s technology allows the magnetic properties of thousands of magnetic particles to be tested in parallel.</p>
-      </li>
-      <li >
-        <h5 class="news-subheader">July 2016</h5>
-        <h4>QDTI awarded NIST grant to develop single nanoparticle magnetic analysis</h4>
-        <p>The National Institute of Standards and Technology (NIST) has awarded QDTI a Phase I SBIR contract to support the development of a NV imaging-based instrument for single magnetic nanoparticle analysis. Magnetic nanoparticles are used in a broad range of industries but find particularly valuable application to biomedical diagnostics and therapy. Magnetic bead products for immunoassays comprise a $1 billion market. A lack of cost-effective commercial technology for high-throughput single-particle analysis impedes robust quality control, which hinders reproducibility and novel innovative uses for magnetic particles. QDTI’s novel particle analysis system with low cost and high throughput will permit high quality, high value magnetic products to reach wider markets.</p>
-      </li>
-      <li >
-        <h5 class="news-subheader">November 2015</h5>
-        <h4>DARPA continues its support for development of QDTI’s novel NV diamond imaging technology</h4>
-        <p>The Defense Advanced Research Projects Agency (DARPA) has exercised its option to continue its support to QDTI for development of the company’s Nitrogen Vacancy (NV) diamond imaging technology. DARPA has been a major supporter of the development of NV technology through its QuASAR quantum sensing program. DARPA’s decision will increase its total support to QDTI for development of the technology through the agency’s SBIR program. QDTI is using the NV imaging technology to develop a new class of ultrasensitive biomedical diagnostics suitable for a wide range of protein, cellular and nucleic acid targets.</p>
-      </li>
-    </ul>
-  </section>
+<main id="news">
+		<h1 id="news-header">News</h1>
+		<div id="news-main">
+			<div id="side-list">
+				<ul id="news-list">
+					<li id="news0" class="selected-news-item">
+						<h3 class="news-subheader">July 2018</h3>
+						<h2>The MassVentures START program awards QDTI $100k</h2>
+					</li>
+					<li id="news1">
+						<h3 class="news-subheader">November 2017</h3>
+						<h2>NSF awards QDTI a grant to support rapid sample transfer of samples for quantum magnetic sensors</h2>
+					</li>
+					<li id="news2">
+						<h3 class="news-subheader">September 2017</h3>
+						<h2>NIST awards a Phase II grant to support QDTI’s development of NV imaging to support single magnetic nanoparticle development</h2>
+					</li>
+					<li id="news3">
+						<h3 class="news-subheader">July 2016</h3>
+						<h2>QDTI awarded NIST grant to develop single nanoparticle magnetic analysis</h2>
+					</li>
+					<li id="news4">
+						<h3 class="news-subheader">November 2015</h3>
+						<h2>DARPA continues its support for development of QDTI’s novel NV diamond imaging technology</h2>
+					</li>
+				</ul>
+			</div>
+			<div id="expanded-view">
+				<div id="expanded-view-inner">
+					<div>
+						<p id="expanded-view-header">The MassVentures START program awards QDTI $100k</p>
+						<p id="expanded-view-body">The MassVentures START program, a program of the Commonwealth of Massachusetts designed to support early-stage, high-growth companies in the state, has awarded QDTI a $100k grant in its 2018 program. The START program is designed to help Massachusetts technology startups to leverage their SBIR funding to grow and to continue to develop their critical technology.</p>
+					</div>
+					<button>Next</button>
+				</div>
+			</div>
+		</div>
+
+
 </main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
