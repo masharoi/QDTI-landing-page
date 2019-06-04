@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<link href="https://fonts.googleapis.com/css?family=Khula:400" rel="stylesheet">
 <link href="css/news.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -15,8 +15,8 @@
 <body >
 <!-- navigation -->
 <header>
-	<a href="index.html" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt="qdti logo"></a>
-	<button class="openbtn sticky" onclick="openNav()">&#9776;</button>
+	<a href="index.html" class="navbar-link"><img class="logo " id="logo" src="images/qdti-logo.PNG" alt="qdti logo"></a>
+	<button class="openbtn sticky" id="open-button" onclick="openNav()">&#9776;</button>
 	<div id="right-sidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<nav class="navbar  navbar-dark" id="navbar-scroll">
 			<ul class="navbar-nav">
@@ -33,30 +33,38 @@
 	</div>
 </header>
 
-<main id="news">
+<section id="news">
+	<div id="header-outer">
 		<h1 id="news-header">News</h1>
+	</div>
+
 		<div id="news-main">
 			<div id="side-list">
 				<ul id="news-list">
 					<li id="news0" class="selected-news-item">
 						<h3 class="news-subheader">July 2018</h3>
 						<h2>The MassVentures START program awards QDTI $100k</h2>
+						<div class="expanded-view-small">The MassVentures START program, a program of the Commonwealth of Massachusetts designed to support early-stage, high-growth companies in the state, has awarded QDTI a $100k grant in its 2018 program. The START program is designed to help Massachusetts technology startups to leverage their SBIR funding to grow and to continue to develop their critical technology.</div>
 					</li>
 					<li id="news1">
 						<h3 class="news-subheader">November 2017</h3>
 						<h2>NSF awards QDTI a grant to support rapid sample transfer of samples for quantum magnetic sensors</h2>
+						<div class="expanded-view-small"> </div>
 					</li>
 					<li id="news2">
 						<h3 class="news-subheader">September 2017</h3>
 						<h2>NIST awards a Phase II grant to support QDTI’s development of NV imaging to support single magnetic nanoparticle development</h2>
+						<div class="expanded-view-small"> </div>
 					</li>
 					<li id="news3">
 						<h3 class="news-subheader">July 2016</h3>
 						<h2>QDTI awarded NIST grant to develop single nanoparticle magnetic analysis</h2>
+						<div class="expanded-view-small"> </div>
 					</li>
 					<li id="news4">
 						<h3 class="news-subheader">November 2015</h3>
 						<h2>DARPA continues its support for development of QDTI’s novel NV diamond imaging technology</h2>
+						<div class="expanded-view-small"> </div>
 					</li>
 				</ul>
 			</div>
@@ -72,10 +80,11 @@
 		</div>
 
 
-</main>
+</section>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/news.js"></script>
 </body>
 </html>

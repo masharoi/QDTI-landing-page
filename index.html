@@ -2,10 +2,11 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Khula:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <title>QDTI</title>
@@ -15,7 +16,7 @@
 <!-- Main Container -->
 
   <!-- navigation -->
-  <header>
+  <header class="top-bar">
   <a href="#about" class="navbar-link"><img class="logo " src="images/qdti-logo.PNG" alt="Company Logo"></a>
   <button class="openbtn sticky" onclick="openNav()">&#9776;</button>
   <div id="right-sidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -91,8 +92,9 @@
     <section id="benefits">
       <h2 class="header">Why QDTI?</h2>
       <p class="text-row" >Detecting tiny concentrations of biomolecules such as proteins is complicated by the vast quantity of other material in complex biofluids such as blood or serum. Industry standard high-sensitivity assays rely on measuring light emitted from a fluorescent molecule label, or from the product of an enzyme label on a substrate. Filter leakage, detector noise, and nonspecific autofluorescence of the sample itself all produce backgrounds that compete with true signals. <span id="more-benefits-text">Ultrasensitive assays must correctly identify individual target molecules amid millions or billions of others, placing strict constraints on false positive signals. Technologies based on optical detection therefore require lengthy sample preparation to reduce backgrounds, necessitating large, complex, and expensive instruments. QDTI’s magnetic detection, in contrast, provides high sensitivity even in raw samples.  Biofluids are negligibly magnetic compared to magnetic particle labels, so there is no intrinsic sample background — the magnetic signal comes only from the labels.  In addition, the magnetic signal permeates through optically fluorescent or opaque samples, so that detection can be made directly in whole blood. </span><span class="more">Read More</span> </p>
+      <hr>
       <div class="row">
-        <div class="col-xl-6 col-sm-12">
+        <div class="col-xl-6 col-sm-12 benefits-list-outer">
           <ul class="benefits-list">
             <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
               <div class="text-column-small"> Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated. </div>
@@ -120,7 +122,7 @@
     <!-- Team Section -->
     <section id="team">
       <h2 class="team-header">Meet the Team</h2>
-      <div class="team-subheader"><h3 >Core Team</h3></div>
+      <div class="team-subheader"><h3>Core Team</h3></div>
       <div id="core-team-option" class="row">
         <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/stephen-hawking.jpg" alt="Card image cap">
           <h4 class="team-name">John Pena</h4>
@@ -141,15 +143,16 @@
       </div>
       <div class="team-subheader"><h3 >Scientific Advisory Board</h3></div>
       <div id="advisory-board-option" class="row">
-        <div class="member-info col-4 col-md-3"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
           <h4 class="team-name">Mikhail Lukin</h4>
           <p class="team-text">Chairman</p>
         </div>
-        <div class="member-info col-4 col-md-3"> <img class="member-img" src="images/marie-curie.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/marie-curie.jpg" alt="Card image cap">
             <h4 class="team-name">Hongkun Park</h4>
         </div>
-        <div class="member-info col-4 col-md-3"> <img class="member-img" src="images/nikola-tesla.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/nikola-tesla.jpg" alt="Card image cap">
           <h4 class="team-name">Ronald Walsworth</h4>
+            <p class="team-text"><a class="linkedin-link" href="https://www.linkedin.com/in/ronald-walsworth-19014733/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -158,21 +161,21 @@
     <section id="publications-news">
       <a class="expand-view-link" href="news.html">All News <img class="expand-view-image" src="images/arrow.jpg" alt="all news link"> </a>
        <div id="news-preview">
-         <div class="news-preview-item">
+         <div id="news2" class="news-preview-item" onclick="showExpandedView(this.id);">
            <h3>September 2017</h3>
            <img class="news-logo" src="images/nist.jpg" alt="nist logo">
          <p>
            NIST awards a Phase II grant to support QDTI’s development of NV imaging
          </p>
        </div>
-         <div class="news-preview-item">
+         <div id="news1" class="news-preview-item" onclick="showExpandedView(this.id);">
            <h3>November 2017</h3>
            <img class="news-logo" src="images/nsf.jpg" alt="nsf logo" style="width:45px;">
            <p>
              NSF awards QDTI a grant to support rapid sample transfer for quantum magnetic sensors
            </p>
          </div>
-         <div class="news-preview-item">
+         <div id="news0" class="news-preview-item" onclick="showExpandedView(this.id);">
            <h3 id="news-date">July 2018</h3>
            <img class="news-logo" src="images/mass-ventures.jpg" alt="MassVentures logo" style="width:100px; height:50px;">
            <p>
@@ -180,18 +183,18 @@
            </p>
          </div>
        </div>
-         <a class="expand-view-link" href="news.html">All Publications<img class="expand-view-image" src="images/arrow.jpg" alt="all publications link"> </a>
+         <a class="expand-view-link" href="publications.html">All Publications<img class="expand-view-image" src="images/arrow.jpg" alt="all publications link"> </a>
          <div  id="publications-preview">
-           <a class="publications-preview-item" href="#">NV Sensing<img class="publications-item-image" src="images/arrow.jpg" alt="NV Sensing link"></a>
-           <a class="publications-preview-item" href="#">Biological Applications<img class="publications-item-image" src="images/arrow.jpg" alt="Biological Applications link"></a>
-           <a class="publications-preview-item" href="#">Quantum Computing & Communications Applications<img class="publications-item-image" src="images/arrow.jpg" alt="Quantum Computing & Communications Applications link"></a>
+           <a class="publications-preview-item" href="publications.html#nv-sensing">NV Sensing<img class="publications-item-image" src="images/arrow.jpg" alt="NV Sensing link"></a>
+           <a class="publications-preview-item" href="publications.html#biological-app">Biological Applications<img class="publications-item-image" src="images/arrow.jpg" alt="Biological Applications link"></a>
+           <a class="publications-preview-item" href="publications.html#computing-app">Quantum Computing & Communications Applications<img class="publications-item-image" src="images/arrow.jpg" alt="Quantum Computing & Communications Applications link"></a>
          </div>
     </section>
 
 
     <!-- Contact us Section -->
     <section id="contact">
-      <div class="row contact-container">
+      <div class="contact-container">
         <div>
           <div id="map"></div>
         </div>

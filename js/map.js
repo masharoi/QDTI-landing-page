@@ -11,7 +11,7 @@ function initMap() {
 			zoom: 13,
 			center: uluru
 		});
-	
+
 
 	var styles = [
 		{
@@ -123,27 +123,28 @@ function initMap() {
 	}];
 
 	map.set('styles',styles);
-	
-	
+
+
 	var marker = new google.maps.Marker({
 		position: uluru,
 		map: map,
 		icon: 'images/circle.png',
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	});
-	
-	 var contentString = 'QDTI';
 
-        var infowindow = new google.maps.InfoWindow({
-            content: contentString,
-            maxWidth: 400
-        });
-	
-	   marker.addListener('click', function () {
-            infowindow.open(map, marker);
-        });
+	 // var contentString = 'QDTI';
+	 //
+   //      var infowindow = new google.maps.InfoWindow({
+   //          content: contentString,
+   //          maxWidth: 400,
+		// 				color: "#000000"
+   //      });
+	 //
+	 //   marker.addListener('click', function () {
+   //          infowindow.open(map, marker);
+   //      });
 }
 
 function animateCircle() {
-	
+
 }
