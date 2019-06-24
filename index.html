@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <title>QDTI</title>
 </head>
 
@@ -23,14 +24,15 @@
     <nav class="navbar  navbar-dark" id="navbar-scroll">
       <ul class="navbar-nav">
         <li class="nav-item"><a href="#about" class="navbar-link nav-link">About</a></li>
-        <li class="nav-item"><a href="#technologies" class="navbar-link nav-link">Technology</a></li>
+        <li class="nav-item"><a href="#quantum-technology" class="navbar-link nav-link">Quantum Sensor<br> Technology</a></li>
+        <li class="nav-item"><a href="#assay-technology" class="navbar-link nav-link">Magnetic Assay<br> Technology</a></li>
         <li class="nav-item"><a href="#benefits" class="navbar-link nav-link">Why QDTI</a></li>
         <li class="nav-item"><a href="#team" class="navbar-link nav-link">Team</a></li>
         <li class="nav-item"><a href="#publications-news" class="navbar-link nav-link">More</a></li>
         <li class="nav-item"><a href="#contact" class="navbar-link nav-link">Contact</a></li>
 		  <hr>
         <li class="nav-item"><a href="news.html" class="navbar-link nav-link">News</a></li>
-        <li class="nav-item"><a href="publications.html" class="navbar-link nav-link">Publications</a></li>
+        <li class="nav-item"><a href="#" class="navbar-link nav-link">Publications</a></li>
       </ul>
     </nav>
   </div>
@@ -39,65 +41,56 @@
   <!-- About Section -->
   <main>
     <section id="about" style="background-image: url('images/fractal6.jpg');">
-      <h2 class="about-header">Quantum Diamond Technologies</h2>
-      <p class="tagline" >QDTI is a technology company based in Somerville, Massachusetts, and seeking to bring a new set of technologies from the lab to commercial application. Founded with a team of leading quantum scientists from Harvard University, QDTI is commercializing a new class of nanoscale devices that rely on the fundamental properties of quantum mechanics to allow new applications in sensing, metrology, computing and other fields.</p>
+      <h1 class="about-header"  data-aos="fade-up" data-aos-duration="1000">Quantum Diamond Technologies</h2>
+      <p class="tagline" data-aos-once="false"  data-aos="fade-up" data-aos-duration="1000">Exciting advances in quantum technology are beginning to emerge after years of significant academic and corporate research.  Powered by the fundamental principles of quantum mechanics, these unique systems provide new capabilities that enable revolutionary approaches to computation, communication, sensing and beyond. <br> <br>
+Quantum Diamond Technologies Incorporated (QDTI) was started to exploit quantum systems intelligently engineered into diamond crystal – called nitrogen vacancy (NV) centers – based on world-leading research at Harvard University.  QDTI is using the NV center technology to build a quantum sensor capability with the potential to disrupt the biomarker detection and medical diagnostics fields.
+</p>
     </section>
 
-    <!-- Technologies Section -->
 
-    <section id="technologies" style="background-image: url('images/rainbow-plate2.jpeg');">
-      <div class="row " id="default-technologies">
-        <div class="col col-xl-6 col-sm-12">
-          <div class="card" id="magnetic-imaging-card" style="background-color: rgba(245, 245, 245, 0.82);">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Magnetic Imaging Platform</h5>
-              <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm.</p>
-              <button class="btn mt-auto">Learn More</button>
-            </div>
-          </div>
-        </div>
-        <div class="col col-xl-6 col-sm-12">
-          <div class="card" id="sensor-tech-card" style="background-color: rgba(245, 245, 245, 0.82);">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Quantum Sensor Technology</h5>
-              <p class="card-text mt-auto">QDTI’s quantum magnetic sensing technology is based upon crystal defects in diamond called nitrogen-vacancy (NV) centers. NV centers result from the substitution of two adjacent carbon atoms in the diamond lattice with a nitrogen atom and an empty site - a vacancy.</p>
-              <button class="btn mt-auto"><span class="button-content">Learn More</span></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="technologies-more" id="technologies-imaging">
-        <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
-          <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
-            <h5 class="card-title">Magnetic Imaging Platform</h5>
-            <p class="card-text mt-auto">QDTI uses NV quantum sensing in a wide-field magnetic imaging modality, a versatile approach that can be applied to a wide range of magnetic samples. Wide-field quantum magnetic imaging simultaneously interrogates millions of individual pixels with sub-micron spatial resolution over a field of view that may exceed 1 mm. <br>
-              NV quantum magnetic sensing is performed by observing spin-dependent fluorescence from NV quantum sensors. When excited with green light from the ground electronic state, NV centers emit red fluorescence. This property allows for optically detected magnetic resonance (ODMR), in which the NV center’s magnetic environment is measured optically by observing its quantum state change in response to resonant microwave fields. <br>
-              The imagining platform contains NV centers in a thin sheet at the surface of a millimeter-scale diamond sensor.  The NV dependent fluorescence is imaged using conventional microscope optics.  When a magnetic sample is introduced to the sensor surface, each NV center experiences a magnetic (Zeeman) shift in response to its local magnetic field. A microwave field is applied to the entire sensor to drive spin transitions in the NV centers, then collect fluorescence images while the microwave frequency is swept. As each individual NV center comes into resonance with the microwave drive, its reduced fluorescence rate causes the image to dim in that pixel. By acquiring several images at a range of frequencies and performing an analysis at each pixel, we generate a map of the magnetic field in the sensing plane. </p>
-          </div>
-        </div>
-      </div>
-      <div class="technologies-more" id="technologies-sensor">
-        <div class="card" style="background-color: rgba(245, 245, 245, 0.82);">
-          <div class="card-body d-flex flex-column"> <a><img src="images/window-close.png" alt=""></a>
-            <h5 class="card-title">Quantum Sensor Technology</h5>
-            <p class="card-text mt-auto">QDTI’s quantum magnetic sensing technology is based upon crystal defects in diamond called nitrogen-vacancy (NV) centers. NV centers result from the substitution of two adjacent carbon atoms in the diamond lattice with a nitrogen atom and an empty site (a vacancy).
-              Each NV center has an electronic spin and a strong magnetic moment that provides sensitivity to magnetic fields. Pioneering research at Harvard established the superior magnetic sensitivity of NV quantum sensors in diamond compared to other technologies, particularly for high resolution sensing applications. Recent demonstrations of the tremendous sensitivity afforded by NV center magnetometers include sub-nanometer magnetic localization of individual proton spins, single-molecule detection, label-free magnetic resonance identification of individual protein molecules, and magnetic measurement of neuron action potentials from the exterior of whole, live marine worms.
-              Diamond NV magnetometry has in recent years moved beyond demonstration and into increasing use as a precision tool across many fields. A wide-field imaging modality can simultaneously interrogate fields of view larger than 1 mm with sub-micron spatial resolution.  Wide field quantum magnetic imaging systems are now in regular research use for biological and geophysical magnetic studies, testament to the versatility of this technology. </p>
-          </div>
+    <section id="quantum-technology">
+      <div class="technology-container" id="quantum-container-outer" data-aos="fade-up" data-aos-duration="1000">
+        <div id="quantum-sensor-container">
+          <h2>QDTI imaging technology</h2>
+          <p>
+            NV centers are tiny defects in the diamond crystal whose electronic states probe their local environment with very high sensitivity and resolution.  To make the imaging platform, QDTI embeds billions of these NV centers just below the surface of a synthetic diamond ‘chip’.  The quantum sensor-infused chip can then rapidly image magnetic fields from objects as small as a few 10s of nanometers.  The NV imager acts like a magnetic microscope – making detailed images of magnetic fields instead of light – with unrivaled sensitivity and throughput. <br> <br>
+While the QDTI imaging technology can be used to detect magnetic fields generated from a wide array of objects, the current QDTI product development focus has been to leverage the imager to create a novel, ultrasensitive biomaterial detection and diagnostics capability.
+
+          </p>
         </div>
       </div>
     </section>
+    <section id="assay-technology">
+      <div id="assay-technology-background">
+        <div>
+            <h2>Magnetic-based immunoassay detection</h2>
+        </div>
+      </div>
+      <div class="technology-container" id="assay-container" data-aos="fade-up" data-aos-duration="1000">
+        <div>
+          <p id="assay-text">
+            Blood and other biofluids have minimal magnetic background signal.  So an assay that utilizes a magnetic detection approach (versus optical detection approach) should provide ultrasensitive measurement capabilities coupled with minimal washing or sample preparation.  That is what the QDTI detection platform can deliver.
+<br> First, QDTI leverages decades of immunoassay tool development (e.g., target specific tags, or antibodies) yet replaces the optical labels with novel magnetic labels that generate special, tiny magnetic fields.
+<br> Second, the NV-center powered imaging platform is able to detect these novel magnetic tags rapidly, discretely and in a manner compatible with biological samples.
+<br> The end result is an ultrasensitive detection platform that requires minimal sample processing and substantially reduced technician time.
+
+        </div>
+      </div>
+    </section>
+
 
     <!-- Benefits Section -->
-    <section id="benefits">
-      <h2 class="header">Why QDTI?</h2>
-      <p class="text-row" >Detecting tiny concentrations of biomolecules such as proteins is complicated by the vast quantity of other material in complex biofluids such as blood or serum. Industry standard high-sensitivity assays rely on measuring light emitted from a fluorescent molecule label, or from the product of an enzyme label on a substrate. Filter leakage, detector noise, and nonspecific autofluorescence of the sample itself all produce backgrounds that compete with true signals. <span id="more-benefits-text">Ultrasensitive assays must correctly identify individual target molecules amid millions or billions of others, placing strict constraints on false positive signals. Technologies based on optical detection therefore require lengthy sample preparation to reduce backgrounds, necessitating large, complex, and expensive instruments. QDTI’s magnetic detection, in contrast, provides high sensitivity even in raw samples.  Biofluids are negligibly magnetic compared to magnetic particle labels, so there is no intrinsic sample background — the magnetic signal comes only from the labels.  In addition, the magnetic signal permeates through optically fluorescent or opaque samples, so that detection can be made directly in whole blood. </span><span class="more">Read More</span> </p>
-      <hr>
+    <section id="benefits" >
+        <h2 class="header">Why QDTI?</h2>
+        <div class="benefits-text">Detecting biomolecules, such as proteins or nucleic acids, present at low concentrations within blood or other biofluids represents a significant technical challenge.  Yet, recent biomedical and clinical research reveals that being able to quantify these low abundance biomolecules is becoming increasingly important to patient care, drug discovery and development efforts, and basic science investigation.
+Proteins themselves are tiny.  So in order to detect these biomolecules, tags (e.g., antibodies) that bind to a protein target of interest in a highly specific and high affinity manner are used to make tag-protein complexes.  These tags are also attached to labels that allow for optical signal based detection of the protein-tag complexes.  The presence of a certain protein, for example, can be quantified by measuring the optical signal strength resulting from a sample that has been treated with target specific tags.
+Unfortunately, biofluids such as blood, where clinicians would like to measure for certain proteins, are inherently “noisy” for optical measurements due to the presence of intrinsically auto-fluorescent contaminants.  As a result, optical based detection technologies need to be washed repeatedly (e.g., sample processing) in order to remove background and to enrich for protein-tag complexes before a true optical based signal can be observed.
+</div>
       <div class="row">
         <div class="col-xl-6 col-sm-12 benefits-list-outer">
           <ul class="benefits-list">
             <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
-              <div class="text-column-small"> Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated. </div>
+              <div class="text-column-small">The QDTI magnetic based assay requires minimal sample processing before the sample is measured.  Many existing systems have many steps that require technician time before the test can be run.</div>
             </li>
             <li id="1"> Minimal sample input <img src="images/plus.png" alt="">
               <div class="text-column-small"></div>
@@ -113,8 +106,8 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-6 col-sm-12">
-          <p class="text-column">Because biofluids are magnetically neutral, there is no background ‘noise’ to remove. Accordingly, the QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is interrogated.</p>
+        <div class="col-xl-6 col-sm-12 text-column-outer">
+          <p class="text-column">The QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is measured. Many existing systems have many technician steps before the test can be run.</p>
         </div>
       </div>
     </section>
@@ -122,8 +115,8 @@
     <!-- Team Section -->
     <section id="team">
       <h2 class="team-header">Meet the Team</h2>
-      <div class="team-subheader"><h3>Core Team</h3></div>
-      <div id="core-team-option" class="row">
+      <div  class="team-subheader"><h3>Core Team</h3></div>
+      <div data-aos="fade-right" data-aos-duration="1000" id="core-team-option" class="row">
         <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/stephen-hawking.jpg" alt="Card image cap">
           <h4 class="team-name">John Pena</h4>
           <p class="team-text">Chief Executive Officer <br> <a class="linkedin-link" href="https://www.linkedin.com/in/john-pena-9244415b/">LinkedIn</a></p>
@@ -142,7 +135,7 @@
           </div>
       </div>
       <div class="team-subheader"><h3 >Scientific Advisory Board</h3></div>
-      <div id="advisory-board-option" class="row">
+      <div data-aos="fade-right" data-aos-duration="1000" id="advisory-board-option" class="row">
         <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
           <h4 class="team-name">Mikhail Lukin</h4>
           <p class="team-text">Chairman</p>
@@ -159,7 +152,7 @@
 
     <!-- News & Publications -->
     <section id="publications-news">
-      <a class="expand-view-link" href="news.html">All News <img class="expand-view-image" src="images/arrow.jpg" alt="all news link"> </a>
+      <a data-aos="fade-left" data-aos-duration="1000" class="expand-view-link" href="news.html">All News <img class="expand-view-image" src="images/arrow.jpg" alt="all news link"> </a>
        <div id="news-preview">
          <div id="news2" class="news-preview-item" onclick="showExpandedView(this.id);">
            <h3>September 2017</h3>
@@ -183,7 +176,7 @@
            </p>
          </div>
        </div>
-         <a class="expand-view-link" href="publications.html">All Publications<img class="expand-view-image" src="images/arrow.jpg" alt="all publications link"> </a>
+         <a data-aos="fade-left" data-aos-duration="1000" class="expand-view-link" href="publications.html">All Publications<img class="expand-view-image" src="images/arrow.jpg" alt="all publications link"> </a>
          <div  id="publications-preview">
            <a class="publications-preview-item" href="publications.html#nv-sensing">NV Sensing<img class="publications-item-image" src="images/arrow.jpg" alt="NV Sensing link"></a>
            <a class="publications-preview-item" href="publications.html#biological-app">Biological Applications<img class="publications-item-image" src="images/arrow.jpg" alt="Biological Applications link"></a>
@@ -196,7 +189,7 @@
     <section id="contact">
       <div class="contact-container">
         <div>
-          <div id="map"></div>
+          <div id="map" data-aos="fade-up" data-aos-duration="1000"></div>
         </div>
         <div class="contact-info-container">
           <h2 class="footer-header">Contact Us</h2>
@@ -217,6 +210,7 @@
   <!-- Main Container Ends -->
 
 <script src="js/map.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
