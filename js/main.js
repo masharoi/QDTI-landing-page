@@ -35,19 +35,24 @@ function openNav() {
 	document.getElementById("main").style.marginLeft = "250px";
 }
 
-//close the side bar.
+// close the side bar.
 function closeNav() {
 	document.getElementById("right-sidebar").style.width = "0";
 	document.getElementById("main").style.marginLeft = "0";
 }
 
-// scroll to the chosen section.
+// scroll to the chosen section and close the sidebar
 $('.navbar-link').click(function () {
 	var href = $(this).attr("href");
 	$('html, body').animate({
 		scrollTop: $(href).offset().top
-	}, 500);
+	}, 700);
+	closeNav();
 	return false;
+});
+
+$('#right-sidebar').mouseleave(function() {
+	closeNav();
 });
 
 $('.text-row .more').click(function () {
