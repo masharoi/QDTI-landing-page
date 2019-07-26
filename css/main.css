@@ -102,7 +102,7 @@ ul li a:hover {
 .about-header {
 	font-size: 24px;
 	white-space: nowrap;
-	font-family: 'Gugi', cursive;
+	font-family: 'Roboto', sans-serif;
 }
 #about-inner-container {
 	background:rgba(255,255,255,0.5);
@@ -250,9 +250,10 @@ ul li a:hover {
 }
 .picture-filler {
 	background: black;
-	width:100%;
+	width:300px;
 	height: 150px;
 	border-radius: 5px;
+	align-self: center;
 }
 #sample-prep-container {
 }
@@ -306,12 +307,15 @@ ul li a:hover {
 	  position: relative;
 		padding-top: 80px;
 		text-align:center;
-		font-size: 1.1em;
+		font-size: 18px;
 		color: white;
 		height: 300px;
 		background: rgba(32, 0, 44,1);
 		transition: height 1s;
   	-webkit-transition: height 1s;
+}
+.benefits-text h2 {
+	font-size: 24px;
 }
 #expanded-text {
 	text-align: justify;
@@ -410,6 +414,7 @@ ul li a:hover {
 .team-header {
 		color: white;
 		width: 240px;
+		font-size: 24px;
 }
 #team {
 	background: #100016;
@@ -429,6 +434,7 @@ ul li a:hover {
 	padding-right: 10px;
 	width: wrap;
 	text-transform:uppercase;
+	font-size: 18px;
 
 }
 .team-subheader {
@@ -440,11 +446,12 @@ ul li a:hover {
 
 .member-info {
 	color: white;
-	font-size: 1.4em;
+	font-size: 18px;
 }
 
 .team-name {
 	padding-top: 20px;
+	font-size: 18px;
 }
 .member-img {
 	width: 120px;
