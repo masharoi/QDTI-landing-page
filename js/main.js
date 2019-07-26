@@ -14,6 +14,7 @@ var magneticAssayMoreText = "Detecting biomolecules, such as proteins or nucleic
 
 let magneticAssayLessText = "Detecting biomolecules, such as proteins or nucleic acids, present at low concentrations within blood or other biofluids represents a significant technical challenge.  Yet, recent biomedical and clinical research reveals that being able to quantify these low abundance biomolecules is becoming increasingly important to patient care, drug discovery and development efforts, and basic science investigation. Proteins themselves are tiny.  So in order to detect these biomolecules, tags (e.g., antibodies) that bind to a protein target of interest in a highly specific and high affinity manner are used to make tag-protein complexes.  These tags are also attached to labels that allow for optical signal based detection of the protein-tag complexes.  The presence of a certain protein, for example, can be quantified by measuring the optical signal strength resulting from a sample that has been treated with target specific tags.";
 
+let expandedText = "Detecting biomolecules, such as proteins or nucleic acids, present at low concentrations within blood or other biofluids represents a significant technical challenge. Yet, recent biomedical and clinical research reveals that being able to quantify these low abundance biomolecules is becoming increasingly important to patient care, drug discovery and development efforts, and basic science investigation. Proteins themselves are tiny. So in order to detect these biomolecules, tags (e.g., antibodies) that bind to a protein target of interest in a highly specific and high affinity manner are used to make tag-protein complexes. These tags are also attached to labels that allow for optical signal-based detection of the protein-tag complexes. The presence of a certain protein, for example, can be quantified by measuring the optical signal strength resulting from a sample that has been treated with target specific tags. Unfortunately, biofluids such as blood, where clinicians would like to measure for certain proteins, are inherently “noisy” for optical measurements due to the presence of intrinsically auto-fluorescent contaminants. As a result, optical based detection technologies need to be washed repeatedly (e.g., sample processing) in order to remove background and to enrich for protein-tag complexes before a true optical based signal can be observed."
 AOS.init();
 
 // change the appearance of the clicked items in benefits list
@@ -107,6 +108,22 @@ $(".more-technology").click(function() {
 		$(".more-technology").text("Read More");
 	}
 
+});
+
+// expand the section when read more button is clicked
+$("#read-more-button").click(function() {
+	$("#expanded-text").text(expandedText);
+  $(".benefits-text").css('height', '500px');
+	$("#read-more-button").css('display', 'none');
+	$("#read-less-button").css('display', 'block');
+});
+
+// make the section smaller when read more button is clicked
+$("#read-less-button").click(function() {
+	$("#expanded-text").text("");
+  $(".benefits-text").css('height', '300px');
+	$("#read-more-button").css('display', 'block');
+	$("#read-less-button").css('display', 'none');
 });
 
 // activate scroll spy

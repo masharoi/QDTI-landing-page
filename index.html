@@ -6,10 +6,21 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Gugi&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144283161-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-144283161-1');
+</script>
 <title>QDTI</title>
 </head>
 
@@ -40,20 +51,22 @@
    <div>
   <!-- About Section -->
   <main>
-    <section id="about" style="background-image: url('images/fractal6.jpg');">
-      <h1 class="about-header"  data-aos="fade-up" data-aos-duration="1000">Quantum Diamond Technologies</h2>
-      <p class="tagline" data-aos-once="false"  data-aos="fade-up" data-aos-duration="1000">Exciting advances in quantum technology are beginning to emerge after years of significant academic and corporate research.  Powered by the fundamental principles of quantum mechanics, these unique systems provide new capabilities that enable revolutionary approaches to computation, communication, sensing and beyond. <br> <br>
-Quantum Diamond Technologies Incorporated (QDTI) was started to exploit quantum systems intelligently engineered into diamond crystal – called nitrogen vacancy (NV) centers – based on world-leading research at Harvard University.  QDTI is using the NV center technology to build a quantum sensor capability with the potential to disrupt the biomarker detection and medical diagnostics fields.
+    <section id="about">
+      <div id="about-inner-container">
+      <h2 class="about-header"  data-aos="fade-up" data-aos-duration="1000">Quantum Diamond Technologies</h2>
+      <p class="tagline" data-aos-once="false"  data-aos="fade-up" data-aos-duration="1000">New quantum technologies are emerging after years of significant academic and corporate research.  Powered by the fundamental principles of quantum mechanics, these systems provide new capabilities that enable revolutionary approaches to computation, communication, sensing and beyond. <br> <br>
+Quantum Diamond Technologies Inc. (QDTI) was started to exploit quantum systems engineered into diamond crystal – called nitrogen vacancy (NV) centers – based on world-leading research at Harvard University.  QDTI is using the NV center technology to build a quantum sensor capability with the potential to disrupt the biomarker detection and medical diagnostics fields.
 </p>
+</div>
     </section>
 
 
     <section id="quantum-technology">
       <div class="technology-container" id="quantum-container-outer" data-aos="fade-up" data-aos-duration="1000">
         <div id="quantum-sensor-container">
-          <h2>QDTI imaging technology</h2>
+          <h2 class="technology-header">QDTI imaging technology</h2>
           <p>
-            NV centers are tiny defects in the diamond crystal whose electronic states probe their local environment with very high sensitivity and resolution.  To make the imaging platform, QDTI embeds billions of these NV centers just below the surface of a synthetic diamond ‘chip’.  The quantum sensor-infused chip can then rapidly image magnetic fields from objects as small as a few 10s of nanometers.  The NV imager acts like a magnetic microscope – making detailed images of magnetic fields instead of light – with unrivaled sensitivity and throughput. <br> <br>
+            NV centers are tiny defects in the diamond crystal whose electronic states probe their local environment with very high sensitivity and resolution.  To make the imaging platform, QDTI uses billions of these NV centers just below the surface of a synthetic diamond ‘chip’.  The quantum sensor-infused chip can then rapidly image magnetic fields from objects as small as a few dozen nanometers.  The NV imager acts like a magnetic microscope – making detailed images of magnetic fields instead of light – with unrivaled sensitivity and throughput. <br> <br>
 While the QDTI imaging technology can be used to detect magnetic fields generated from a wide array of objects, the current QDTI product development focus has been to leverage the imager to create a novel, ultrasensitive biomaterial detection and diagnostics capability.
 
           </p>
@@ -63,16 +76,16 @@ While the QDTI imaging technology can be used to detect magnetic fields generate
     <section id="assay-technology">
       <div id="assay-technology-background">
         <div>
-            <h2>Magnetic-based immunoassay detection</h2>
+            <h2 class="technology-header">Magnetic-based immunoassay detection</h2>
         </div>
       </div>
       <div class="technology-container" id="assay-container" data-aos="fade-up" data-aos-duration="1000">
         <div>
           <p id="assay-text">
             Blood and other biofluids have minimal magnetic background signal.  So an assay that utilizes a magnetic detection approach (versus optical detection approach) should provide ultrasensitive measurement capabilities coupled with minimal washing or sample preparation.  That is what the QDTI detection platform can deliver.
-<br> First, QDTI leverages decades of immunoassay tool development (e.g., target specific tags, or antibodies) yet replaces the optical labels with novel magnetic labels that generate special, tiny magnetic fields.
-<br> Second, the NV-center powered imaging platform is able to detect these novel magnetic tags rapidly, discretely and in a manner compatible with biological samples.
-<br> The end result is an ultrasensitive detection platform that requires minimal sample processing and substantially reduced technician time.
+<br> <br> First, QDTI leverages decades of immunoassay tool development (e.g., target specific tags, or antibodies) yet replaces the optical labels with novel magnetic labels that generate special, tiny magnetic fields.
+<br> <br> Second, the NV-center powered imaging platform is able to detect these novel magnetic tags rapidly, discretely and in a manner compatible with biological samples.
+<br> <br> The end result is an ultrasensitive detection platform that requires minimal sample processing and substantially reduced technician time.
 
         </div>
       </div>
@@ -81,12 +94,76 @@ While the QDTI imaging technology can be used to detect magnetic fields generate
 
     <!-- Benefits Section -->
     <section id="benefits" >
-        <h2 class="header">Why QDTI?</h2>
-        <div class="benefits-text">Detecting biomolecules, such as proteins or nucleic acids, present at low concentrations within blood or other biofluids represents a significant technical challenge.  Yet, recent biomedical and clinical research reveals that being able to quantify these low abundance biomolecules is becoming increasingly important to patient care, drug discovery and development efforts, and basic science investigation.
-Proteins themselves are tiny.  So in order to detect these biomolecules, tags (e.g., antibodies) that bind to a protein target of interest in a highly specific and high affinity manner are used to make tag-protein complexes.  These tags are also attached to labels that allow for optical signal based detection of the protein-tag complexes.  The presence of a certain protein, for example, can be quantified by measuring the optical signal strength resulting from a sample that has been treated with target specific tags.
-Unfortunately, biofluids such as blood, where clinicians would like to measure for certain proteins, are inherently “noisy” for optical measurements due to the presence of intrinsically auto-fluorescent contaminants.  As a result, optical based detection technologies need to be washed repeatedly (e.g., sample processing) in order to remove background and to enrich for protein-tag complexes before a true optical based signal can be observed.
+
+        <div class="benefits-text">
+            <h2 >Why QDTI?</h2>
+            <p>QDTI’s quantum sensor overcomes obstacles that <br> have limited conventional diagnostics
+approaches for decades.<br> <br> <span id="read-more-button">Read More <br> <i class="fas fa-chevron-down"></i></span></p>
+<div id="expanded-text"></div> <span id="read-less-button"><i class="fas fa-chevron-up"></i> <br>Read Less </span></div>
+
+<div id="benefits-list-outer">
+  <div id="benefits-item-list">
+    <div id="benefits-one" class="benefits-item">
+        <h3>Ultra simple sample preparation</h3>
+        <p class="benefits-item-text"> The QDTI magnetic based assay requires minimal sample processing before the sample is measured.  Many existing systems have many steps that require technician time before the test can be run.</p>
+          <!-- <img id="sample-prep-picture" id="" src="./images/simple-prep.png"> </img> -->
+         <div id="sample-prep-container">
+
+           <div class="sample-prep-row">
+
+           <div>
+        <h4 class="sample-prep-header">1. Add sample, <br> beads & mix</h4>
+        <img class="sample-prep-drawing"  src="./images/drawing1.jpg"> </img>
+      </div>
+
+      <div>
+        <h4  class="sample-prep-header">2. Pellet & <br> re-suspend</h4>
+          <img class="sample-prep-drawing"  src="./images/drawing2.jpg"> </img>
+        </div>
+
+      </div>
+
+      <div class="sample-prep-row">
+
+
+          <div>
+          <h4  class="sample-prep-header">3. Transfer to <br> cartridge & dry</h4>
+          <img class="sample-prep-drawing"  src="./images/dried-catrdridge.jpg"> </img>
+        </div>
+
+
+      <div>
+        <h4  class="sample-prep-header">4. Image & <br> measure</h4>
+          <img class="sample-prep-drawing"  src="./images/machine-measure.png"> </img>
+      </div>
+
+    </div>
+
+  </div>
+    </div>
+    <div id="benefits-two" class="benefits-item">
+      <h3>Minimal sample input</h3>
+      <p class="benefits-item-text">Because the sample is not being repeatedly washed before reading, there is little loss of sample material. As such, the QDTI diagnostic protocol requires only a few microliters of sample to perform the assay – a critical benefit when sample availability is limited.</p>
+    </div>
+    <div id="benefits-three" class="benefits-item">
+      <h3>Ultrasensitive detection of low-concentration biomarkers</h3>
+      <p class="benefits-item-text">Despite the dramatically reduced sample prep and sample input needs, the QDTI system can deliver ultrasensitive performance without the attendant complexity and costs.  The capability offers new diagnostic tools for improved clinical decisions and better patient health.</p>
+
+    </div>
+    <div id="benefits-four" class="benefits-item">
+        <h3>Flexibility in biomarker targets</h3>
+<p class="benefits-item-text">QDTI is building an open platform right from the start.  Users will be able to use the QDTI technology platform to build their own assays for their own drug discovery, companion diagnostics, or other application needs. In addition to proteins, the QDTI system will also be able to provide detection for nucleic acids and cells – all on the same detection platform.</p>
+  <img class="picture-filler" id="" src="./images/pipetting.jpg"> </img>
+    </div>
+    <div id="benefits-five"  class="benefits-item">
+        <h3>Reducing diagnostics costs</h3>
+        <p class="benefits-item-text">Existing high-sensitivity diagnostics require skilled technicians and many processing steps, which increase the time to result and the assay costs.  The simpler magnetic assay delivers similar results at lower total cost, and with much less biowaste and use of plastics.</p>
+          <img class="picture-filler" id="" src="./images/alpha-machines.jpg"> </img>
+    </div>
+  </div>
+
 </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-xl-6 col-sm-12 benefits-list-outer">
           <ul class="benefits-list">
             <li id="0" class="more" >Ultra simple sample preparation <img  src="images/minus.png" alt="">
@@ -109,7 +186,7 @@ Unfortunately, biofluids such as blood, where clinicians would like to measure f
         <div class="col-xl-6 col-sm-12 text-column-outer">
           <p class="text-column">The QDTI magnetic based assay requires minimal sample processing (2-steps only) before the sample is measured. Many existing systems have many technician steps before the test can be run.</p>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Team Section -->
@@ -117,33 +194,33 @@ Unfortunately, biofluids such as blood, where clinicians would like to measure f
       <h2 class="team-header">Meet the Team</h2>
       <div  class="team-subheader"><h3>Core Team</h3></div>
       <div data-aos="fade-right" data-aos-duration="1000" id="core-team-option" class="row">
-        <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/stephen-hawking.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/JohnPena.jpg">
           <h4 class="team-name">John Pena</h4>
           <p class="team-text">Chief Executive Officer <br> <a class="linkedin-link" href="https://www.linkedin.com/in/john-pena-9244415b/">LinkedIn</a></p>
         </div>
-          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/albert-einstein.jpg" alt="Card image cap">
+          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/SeabAdamson.jpg">
             <h4 class="team-name">Seabron Adamson</h4>
             <p class="team-text">Chief Financial Officer <br> <a class="linkedin-link" href="https://www.linkedin.com/in/seabron-adamson-23158762/">LinkedIn</a></p>
           </div>
-          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/albert-einstein.jpg" alt="Card image cap">
+          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/JeffreyRandall.jpg">
             <h4 class="team-name">Jeff Randall</h4>
             <p class="team-text">Lead Scientist<br>Assay Biochemistry <br><a class="linkedin-link" href="https://www.linkedin.com/in/jeffreyrandall/">LinkedIn</a></p>
           </div>
-          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/dmitri-mendeleev.jpg" alt="Card image cap">
+          <div class="member-info col-6 col-md-3"> <img class="member-img" src="images/ColinConnolly.jpg">
             <h4 class="team-name">Colin Connolly</h4>
             <p class="team-text">Lead Scientist<br>Physics<br><a class="linkedin-link" href="https://www.linkedin.com/in/colin-connolly-8852149/">LinkedIn</a></p>
           </div>
       </div>
       <div class="team-subheader"><h3 >Scientific Advisory Board</h3></div>
       <div data-aos="fade-right" data-aos-duration="1000" id="advisory-board-option" class="row">
-        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/gandalf.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3"> <div class="member-img"></div>
           <h4 class="team-name">Mikhail Lukin</h4>
           <p class="team-text">Chairman</p>
         </div>
-        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/marie-curie.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3">  <div class="member-img"></div>
             <h4 class="team-name">Hongkun Park</h4>
         </div>
-        <div class="member-info col-6 col-sm-4 col-md-3"> <img class="member-img" src="images/nikola-tesla.jpg" alt="Card image cap">
+        <div class="member-info col-6 col-sm-4 col-md-3"> <div class="member-img"></div>
           <h4 class="team-name">Ronald Walsworth</h4>
             <p class="team-text"><a class="linkedin-link" href="https://www.linkedin.com/in/ronald-walsworth-19014733/">LinkedIn</a></p>
         </div>
