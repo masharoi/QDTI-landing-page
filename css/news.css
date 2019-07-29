@@ -1,7 +1,6 @@
 
 #side-list ul > li {
 	padding: 2px 10px 2px 20px;
-	font-family: 'Khula', sans-serif;
 	font-size: 1em;
 	list-style-type: none;
 	cursor: pointer;
@@ -10,7 +9,6 @@
 }
 
 #news-header {
-	font-family: 'Khula', sans-serif;
 	color: rgb(56, 96, 0);
 	font-weight: bold;
 	margin-left: 13%;
