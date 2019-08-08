@@ -1,0 +1,42 @@
+
+
+/* publications */
+
+#publications h2 {
+  font-size: 24px;
+  margin-left: 40px;
+  margin-top: 100px;
+}
+#publications-about {
+	font-size: 15px;
+  margin: 0 40px;
+}
+.publications-item {
+	font-size: 15px;
+}
+.outer-container {
+	padding: 20px;
+  display: flex;
+}
+ul {
+  padding:0;
+}
+body {
+  background: #f5f2f2;
+}
+.inner-container {
+  background: white;
+  box-shadow: 0 6px 15px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.publications-subheader {
+	font-size: 18px;
+
+}
+.selected {
+	color: white;
+}

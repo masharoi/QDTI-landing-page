@@ -106,11 +106,9 @@ ul li a:hover {
 }
 #about-inner-container {
 	background:rgba(255,255,255,0.5);
-	padding: 20px;
-	margin-left: 100px;
-	margin-right: 380px;
-	width: 500px;
-
+	align-items: center;
+	margin-right:35%;
+	padding-left: 100px;
 }
 #about {
 	padding-top: 200px;
@@ -175,7 +173,7 @@ ul li a:hover {
 	-webkit-transition: height 1s;
   transition: height 1s;
 	background: rgb(56, 96, 0);
-	height: 40vh;
+	height: 30vh;
 	width: 100vw;
 	background-image: url('../images/rainbow-plate2.png');
 	background-repeat: no-repeat;
@@ -198,6 +196,7 @@ ul li a:hover {
 }
 #quantum-container-outer {
 	height: 100vh;
+	display: flex;
 	align-items: center;
 }
 .technology-header {
@@ -222,6 +221,7 @@ ul li a:hover {
 }
 
 /* benefits */
+
 #benefits-list-outer {
 		background: #f5f2f2;
 }
@@ -250,7 +250,7 @@ ul li a:hover {
 }
 .picture-filler {
 	background: black;
-	width:300px;
+	width: 300px;
 	height: 150px;
 	border-radius: 5px;
 	align-self: center;
@@ -281,7 +281,6 @@ ul li a:hover {
 .sample-prep-row {
 	display: flex;
 	padding-bottom: 50px;
-	flex-direction: row;
 	justify-content: space-around;
 }
 .sample-prep-row div {
@@ -327,7 +326,8 @@ ul li a:hover {
 	text-align: justify;
 	padding: 0 40px;
 	font-family: 'Roboto', sans-serif;
-		font-size: 15px;
+	font-size: 15px;
+	display:none;
 }
 
 #read-more-button {
@@ -339,6 +339,7 @@ ul li a:hover {
 #read-less-button {
 	cursor:pointer;
 	display: none;
+	padding-bottom: 60px;
 }
 #read-less-button:hover {
 	color:green;
@@ -359,17 +360,7 @@ ul li a:hover {
 .benefits-list {
 	margin: 40px 5% 10% 0;
 }
-.benefits-list li {
-	font-family: 'Roboto', sans-serif;
-	list-style: none;
-	padding: 15px 0;
-	font-size: 1.7em;
-	text-align: right;
-	cursor: pointer;
-}
-.benefits-list li img {
-	width: 35px;
-}
+
 .header {
 	font-weight: bold;
 	padding-bottom: 10px;
@@ -390,27 +381,7 @@ ul li a:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.text-column-outer {
-	position:relative;
-}
-.text-column {
-	text-align: left;
-	line-height: 1.5em;
-	text-indent: 0px;
-	font-size: 1.5em;
-	margin-top: 60px;
-	padding: 0 35% 0 15px;
-  border-left: 7px solid   #580060;
-}
 
-.text-column-small {
-	color: black;
-	font-weight: normal;
-	font-size: 0.8em;
-	white-space: normal;
-	width: 100%;
-	display: none;
-}
 /* Team */
 .linkedin-link {
 	font-size: 0.8em;
@@ -423,15 +394,18 @@ ul li a:hover {
 .team-header {
 		color: white;
 		width: 240px;
-		font-size: 24px;
+		font-size:24px;
 }
 #team {
 	background: #100016;
 	padding: 5% 3% 0 8%;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
 }
 
 #core-team-option {
-	padding-top: 3%;
+	margin-top: 100px!important;
 }
 #advisory-board-option {
 	display: flex;
@@ -485,25 +459,16 @@ ul li a:hover {
 	height: 30vh;
 	margin: 0 15%;
 }
-.publications-preview-item {
-		font-size: 1.3em;
-		color:black;
-		font-weight: bold;
-}
 
-.publications-preview-item:hover {
-	text-decoration: none;
-	color: #580060;
-}
 #publications-news {
 	padding-top: 80px;
 	background-color: white;
 	font-family: 'Roboto', sans-serif;
 }
 .expand-view-link {
-		margin: 0 15%;
+		margin: 20px 15%;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: flex-start;
 		font-size: 1.5em;
 		color: #580060;
 		font-weight: bold;
@@ -532,21 +497,18 @@ ul li a:hover {
 }
 .news-preview-item h3 {
 	color:  rgb(56, 96, 0);
-	font-size: 0.8em;
-	top: 55px;
+	font-size: 15px;
+	top: 50px;
 	position:absolute;
-	left: -85px;
+	left: -75px;
 	transform: rotate(-90deg);
 	font-weight: bold;
 }
 .news-preview-item {
 	cursor: pointer;
 	position:relative;
-	font-weight: bold;
-	font-size: 1.4em;
-	line-height: 1.4;
+	font-size: 15px;
 	width: 25%;
-	height: 38%;
 	border-left: solid rgba(56, 96, 0, 0.7) 5px;
 	padding-left: 10px;
 }
@@ -571,18 +533,19 @@ ul li a:hover {
 .footer-header {
 	padding: 0 5% 5% 0;
 	color: white;
+	font-size: 27px;
 }
 #map {
 	border-radius: 5px;
 	background: black;
-	height: 500px;
-	width: 600px;
+	height: 400px;
+	width: 500px;
 }
 .contact-info {
 	font-weight: 300;
 	line-height: 1.5em;
 	padding: 0 5% 5% 0;
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 }
 .copyright {
@@ -782,6 +745,66 @@ ul li a:hover {
 
 /* Mobile */
 @media (max-width: 320px) {
+	/* assay technology */
+	#assay-technology-background {
+		height: 20vh;
+	}
+	.technology-header {
+		font-size: 18px;
+	}
+	#assay-technology-background div {
+		padding-left:40px;
+	}
+
+	#assay-container {
+		padding:20px 40px ;
+		height: auto;
+	}
+	/* quantum technology */
+	#quantum-container-outer {
+		padding:20px 40px ;
+		height: auto;
+	}
+	/* benefits */
+	.benefits-item {
+		justify-content: center;
+	}
+		.sample-prep-row div{
+			padding: 0 40px;
+		}
+		#sample-prep-container {
+			display:none;
+		}
+		#benefits-item-list {
+			padding: 100px 30px;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(5, 1fr);
+			grid-gap:10px;
+		}
+		.picture-filler {
+			display: none;
+		}
+		#benefits-four {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		#benefits-one {
+			grid-column:1;
+			grid-row: 3;
+		}
+		#benefits-three {
+			grid-column:1;
+			grid-row: 2;
+		}
+		#benefits-two {
+			grid-column: 1;
+			grid-row: 4;
+		}
+		#benefits-five {
+			grid-column: 1 ;
+			grid-row: 5;
+		}
 	/* navigation */
 	.sidebar a {
 		padding: 10px 8px 5px 32px;
@@ -804,12 +827,16 @@ ul li a:hover {
 
 	}
 	#about {
-		background-position: center;
-		padding: 15% 4% 50px 4%;
-		line-height: 1.5;
+    padding: 50px 0 0 0;
+    background: white;
+	}
+	#about-inner-container {
+		margin:0 40px 40px 40px;
+		width: auto;
+		padding:0;
 	}
 	.tagline {
-		font-size: 1em;
+		font-size: 15px;
 	}
 
 	/* benefits */
@@ -821,38 +848,10 @@ ul li a:hover {
 		padding-bottom: 20px;
 	}
 
-	.benefits-list {
-		margin:0;
-		padding-left:0;
-		padding-bottom: 20px;
-
-	}
-	.benefits-list li {
-		font-family: 'Roboto', sans-serif;
-		padding: 15px 5px;
-		font-size: 1.1em;
-		text-align: right;
-		margin: 0;
-		width: 300px;
-	}
-	.benefits-list li img {
-		width: 30px;
-	}
-
 	#benefits {
 		padding:0;
 	}
-	.benefits_container {
-		margin: 0;
-	}
-	.text-column {
-		display: none;
-	}
-	.text-column-small {
-		display: block;
-		text-align: right;
-		font-size: 1em;
-	}
+
 	/* team */
 	.team-subheader {
 		padding:0;
@@ -862,18 +861,21 @@ ul li a:hover {
 		padding-top: 30px;
 	}
 	.member-info {
-		font-size: 1.2em;
+		font-size: 15px;
 	}
 	.team-name {
-		font-size: 1.2em;
+		font-size: 15px;
+	}
+	#core-team-option{
+		margin-top: 20px!important;
 	}
 	#team {
 		padding:0;
 	}
 
 	.member-img {
-		width: 90px;
-		height: 90px;
+		width: 70px;
+		height: 70px;
 	}
 	/* publications and news */
 	.news-preview-item {
@@ -937,26 +939,94 @@ ul li a:hover {
 }
 /* Mobile Iphone 6/7/8 X */
 @media (min-width: 321px) and (max-width: 375px) {
-	/* magnetic asssay technology */
-#assay-text {
-	font-size: 0.7em;
-}
-#assay-container {
-	padding-right:20px;
-	padding-left: 20px;
-}
-.more-technology {
-	font-size: 0.8em;
-}
-/* quantum sensor technology */
-#quantum-container-outer {
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 1em;
-}
-#quantum-technology:before {
-	left: 0;
-}
+	/*about*/
+	.about-header {
+		white-space: normal;
+		font-size: 18px;
+	}
+	#about {
+    padding: 50px 0 0 0;
+    background: white;
+		display: flex;
+		align-items: center;
+	}
+	#about-inner-container {
+		margin:0 40px 40px 40px;
+		width: auto;
+		padding:0;
+	}
+	.tagline {
+		font-size: 15px;
+	}
+
+	/* quantum technology */
+	#quantum-container-outer {
+		padding:20px 40px ;
+		height: auto;
+
+	}
+	#quantum-technology {
+		display: flex;
+		align-items: center;
+	}
+	/* assay technology */
+	#assay-technology-background {
+		height: 20vh;
+	}
+	.technology-header {
+		font-size: 18px;
+	}
+	#assay-technology-background div {
+		padding-left:40px;
+	}
+
+	#assay-container {
+		padding:20px 40px ;
+		height: auto;
+		font-size: 15px;
+	}
+
+	/*benefits*/
+	.benefits-item {
+		justify-content: center;
+	}
+		.sample-prep-row div{
+			padding: 0 40px;
+		}
+		#sample-prep-container {
+			display:none;
+		}
+		#benefits-item-list {
+			padding: 100px 20px;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(5, 1fr);
+			grid-gap:10px;
+		}
+		.picture-filler {
+			display: none;
+		}
+		#benefits-four {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		#benefits-one {
+			grid-column:1;
+			grid-row: 3;
+		}
+		#benefits-three {
+			grid-column:1;
+			grid-row: 2;
+		}
+		#benefits-two {
+			grid-column: 1;
+			grid-row: 4;
+		}
+		#benefits-five {
+			grid-column: 1 ;
+			grid-row: 5;
+		}
+
 		/* navigation */
 		.sidebar a {
 			padding: 10px 8px 15px 32px;
@@ -972,60 +1042,12 @@ ul li a:hover {
 			margin:0;
 			padding: 0 10px;
 		}
-		/* about */
-		.about-header {
-			font-size: 1.6em;
-			white-space: normal;
-			padding-top: 20%;
-		}
-		#about {
-			background-position: center;
-			padding: 0 4% 1px 4%;
-			line-height: 1.9;
-		}
-		.tagline {
-			font-size: 1.2em;
-		}
-
 
 		/* benefits */
-
-		.header {
-			margin: 0;
-			padding: 10px 0 10px 4%;
-		}
-
-		.benefits-list {
-			margin:0;
-			padding-left:0;
-			padding-bottom: 20px;
-		}
-		.benefits-list li {
-			font-family: 'Roboto', sans-serif;
-			padding: 15px 5px;
-			font-size: 1.1em;
-			text-align: right;
-			margin: 0;
-			width: 300px;
-		}
-		.benefits-list li img {
-			width: 30px;
-		}
-
 		#benefits {
 			padding: 0;
 		}
-		.benefits_container {
-			margin: 0;
-		}
-		.text-column {
-			display: none;
-		}
-		.text-column-small {
-			display: block;
-			text-align: right;
-			font-size: 1em;
-		}
+
 		/* team */
 		.team-subheader {
 			padding:0;
@@ -1058,6 +1080,7 @@ ul li a:hover {
 		}
 		.expand-view-link {
 			font-size: 1.1em;
+			margin-left: 30px;
 		}
 	  #publications-news {
 			padding-top: 50px;
@@ -1109,27 +1132,94 @@ ul li a:hover {
 		}
 }
 @media (min-width: 376px)and (max-width: 499px)  {
+	/*about*/
+	.about-header {
+		white-space: normal;
+		font-size: 18px;
+	}
+	#about {
+    padding: 50px 0 0 0;
+    background: white;
+		display: flex;
+		align-items: center;
+	}
+	#about-inner-container {
+		margin:0 40px 40px 40px;
+		width: auto;
+		padding:0;
+	}
+	.tagline {
+		font-size: 15px;
+	}
 
-	/* magnetic asssay technology */
-#assay-text {
-	font-size: 0.7em;
-}
-#assay-container {
-	padding-right:20px;
-	padding-left: 20px;
-}
-.more-technology {
-	font-size: 0.8em;
-}
-/* quantum sensor technology */
-#quantum-container-outer {
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 1em;
-}
-#quantum-technology:before {
-	left: 0;
-}
+	/* quantum technology */
+	#quantum-container-outer {
+		padding:20px 40px ;
+		height: auto;
+
+	}
+	#quantum-technology {
+		display: flex;
+		align-items: center;
+	}
+	/* assay technology */
+	#assay-technology-background {
+		height: 20vh;
+	}
+	.technology-header {
+		font-size: 18px;
+	}
+	#assay-technology-background div {
+		padding-left:40px;
+	}
+
+	#assay-container {
+		padding:20px 40px ;
+		height: auto;
+		font-size: 15px;
+	}
+
+	/*benefits*/
+	.benefits-item {
+		justify-content: center;
+	}
+		.sample-prep-row div{
+			padding: 0 40px;
+		}
+		#sample-prep-container {
+			display:none;
+		}
+		#benefits-item-list {
+			padding: 100px 30px;
+			display: grid;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(5, 1fr);
+			grid-gap:10px;
+		}
+		.picture-filler {
+			display: none;
+		}
+		#benefits-four {
+			grid-column: 1;
+			grid-row: 1;
+		}
+		#benefits-one {
+			grid-column:1;
+			grid-row: 3;
+		}
+		#benefits-three {
+			grid-column:1;
+			grid-row: 2;
+		}
+		#benefits-two {
+			grid-column: 1;
+			grid-row: 4;
+		}
+		#benefits-five {
+			grid-column: 1 ;
+			grid-row: 5;
+		}
+
 	/* navigation */
 	.sidebar a {
 		padding: 10px 8px 15px 32px;
@@ -1145,59 +1235,11 @@ ul li a:hover {
 		margin:0;
 		padding: 0 10px;
 	}
-	/* about */
-	.about-header {
-		font-size: 1.6em;
-		white-space: normal;
-			padding-top: 20%;
-
-	}
-	#about {
-		background-position: center;
-		padding: 0 4% 1px 4%;
-		line-height: 1.4;
-		font-size: 0.9em;
-	}
-	.tagline {
-		font-size: 1.3em;
-	}
-
-	/* benefits */
-
-	.header {
-		margin: 0;
-		padding: 10px 0 10px 4%;
-	}
-
-	.benefits-list {
-		margin:0;
-		padding-left:0;
-		padding-bottom: 20px;
-	}
-	.benefits-list li {
-		padding: 15px 0;
-		font-size: 1em;
-		text-align: left;
-		margin: 0;
-	}
-	.benefits-list li img {
-		width: 30px;
-	}
 
 	#benefits {
 		padding: 0;
 	}
-	.benefits_container {
-		margin: 0;
-	}
-	.text-column {
-		display: none;
-	}
-	.text-column-small {
-		display: block;
-		text-align: left;
-		font-size: 1em;
-	}
+
 	/* team */
 	.team-subheader {
 		padding:0;
@@ -1230,6 +1272,7 @@ ul li a:hover {
 	}
 	.expand-view-link {
 		font-size: 1.1em;
+		margin-left: 30px;
 	}
 	#publications-news {
 		padding-top: 50px;
@@ -1282,32 +1325,199 @@ ul li a:hover {
 }
 
 /* Tablets */
-@media (min-width: 500px) and (max-width: 1023px) {
-	/* magnetic asssay technology */
-#assay-text {
-	font-size: 0.8em;
+@media (min-width: 500px) and (max-width: 870px) {
+
+.benefits-item {
+	justify-content: center;
 }
-#assay-container {
-	padding-right:20px;
-	padding-left: 20px;
+	.sample-prep-row div{
+		padding: 0 40px;
+	}
+	#sample-prep-container {
+		display:none;
+	}
+	#benefits-item-list {
+		padding: 100px 80px;
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-gap:10px;
+	}
+	.picture-filler {
+		display: none;
+	}
+	#benefits-four {
+		grid-column: 1;
+		grid-row: 1;
+	}
+	#benefits-one {
+		grid-column:1;
+		grid-row: 3;
+	}
+	#benefits-three {
+		grid-column:1;
+		grid-row: 2;
+	}
+	#benefits-two {
+		grid-column: 1;
+		grid-row: 4;
+	}
+	#benefits-five {
+		grid-column: 1 ;
+		grid-row: 5;
+	}
+	/* team */
+	.team-header {
+		padding-top: 70px;
+		margin:0;
+	}
+	.team-subheader {
+		padding-bottom: 20px;
+	}
+	.team-name {
+		font-size: 1em;
+	}
+	.team-text {
+		font-size: 0.9em;
+	}
+	.member-img {
+		width: 130px;
+		height:130px;
+	}
+	#team {
+		padding:0 4%;
+	}
+	/* publications and news */
+	.expand-view-image {
+		width: 25px;
+		height: 17px;
+	}
+	.expand-view-link {
+		font-size: 18px;
+	}
+	.news-preview-item {
+		width:100%;
+		margin-bottom: 5px;
+		font-size: 15px;
+	}
+	#publications-news {
+		padding-top:100px;
+	}
+	#news-preview {
+		flex-direction: column;
+	}
+	.news-preview-item img {
+		display: none;
+	}
+	.news-preview-item h3 {
+		top: 0;
+		position:relative;
+		left: 0;
+		transform: rotate(0deg);
+	}
+	#news-date {
+			top: 0;
+			left: 0;
+	}
+
+	/* contact us */
+	.contact-container {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		padding-left:12%;
+	}
+	.contact-info-container {
+		justify-content: flex-start;
+		padding:0;
+	}
+	#map {
+		height: 250px;
+		width: 400px;
+	}
+	/* quantum technology */
+	#quantum-container-outer {
+		padding:20px 100px ;
+		height: auto;
+		font-size: 15px;
+	}
+	#quantum-technology {
+		display: flex;
+		align-items: center;
+	}
+	/* assay technology */
+
+	.technology-header {
+		font-size: 18px;
+	}
+	#assay-technology-background div {
+		padding-left:100px;
+	}
+
+	#assay-container {
+		padding:20px 100px ;
+		height: auto;
+		font-size: 15px;
+	}
+	/*about*/
+	.about-header {
+		white-space: normal;
+		font-size: 18px;
+	}
+	#about {
+		padding: 100px 0 0 0;
+		display: flex;
+		align-items: center;
+	}
+	#about-inner-container {
+		margin:100px;
+		width: auto;
+		padding:0;
+	}
+	.tagline {
+		font-size: 15px;
+	}
+
 }
-.more-technology {
-	font-size: 0.8em;
-}
-/* quantum sensor technology */
-#quantum-container-outer {
-	padding-right: 10px;
-	padding-left: 10px;
-	font-size: 1em;
-}
-#quantum-technology:before {
-	left: 0;
-}
+@media (min-width: 871px) and (max-width: 1023px) {
+	/*benefits*/
+	.sample-prep-row div{
+		padding: 0 40px;
+	}
+	#benefits-item-list {
+		padding: 100px 80px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 270px 270px 550px;
+		grid-gap:10px;
+	}
+	.picture-filler {
+		display: none;
+	}
+	#benefits-four {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	#benefits-one {
+		grid-column:1/3;
+		grid-row: 3;
+	}
+	#benefits-three {
+		grid-column:1;
+		grid-row: 2;
+	}
+	#benefits-two {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	#benefits-five {
+		grid-column: 1 ;
+		grid-row: 1;
+	}
+
 	/* publications and news */
 	.news-preview-item {
 		width:100%;
 		margin-bottom: 5px;
-		height: 25%;
 		font-size: 1.3em;
 	}
 	#publications-news {
@@ -1345,52 +1555,24 @@ ul li a:hover {
 		width: 500px;
 	}
 
-	/* Benefits */
-	#benefits {
-		padding: 0;
-		margin:0;
-	}
-	.benefits-text {
-		font-size: 0.8em;
-	}
-	.benefits-list {
-		padding:0;
-		margin:0 4%;
-	}
-	.benefits-list-outer {
-		padding:0!important;
-	}
 
-	.text-column {
-		display: none;
-	}
-	.text-column-small {
-		display: block;
-		text-align: left;
-		font-size: 0.8em;
-	}
-	.benefits-list li {
-		padding: 0 0 20px 0;
-		font-size: 1.4em;
-		text-align: left;
-		white-space: normal;
-	}
-	.header {
-		margin-left: 0px;
-		padding-left: 15px;
-		padding-bottom:10px;
-	}
-  /* About */
-	#about {
-		padding: 0 20% 1px 10%;
-	}
+	/*about*/
 	.about-header {
-		font-size: 2.5em;
 		white-space: normal;
-		padding-top: 23%;
+		font-size: 18px;
+	}
+	#about {
+		padding: 100px 0 0 0;
+		display: flex;
+		align-items: center;
+	}
+	#about-inner-container {
+		margin:100px;
+		width: auto;
+		padding:0;
 	}
 	.tagline {
-		font-size: 1em;
+		font-size: 15px;
 	}
 	/* team */
 	.team-header {
@@ -1413,34 +1595,125 @@ ul li a:hover {
 	#team {
 		padding:0 4%;
 	}
+	/* quantum technology */
+	#quantum-container-outer {
+		padding:20px 100px ;
+		height: auto;
+		font-size: 15px;
+	}
+	#quantum-technology {
+		display: flex;
+		align-items: center;
+	}
+	/* assay technology */
+
+	.technology-header {
+		font-size: 18px;
+	}
+	#assay-technology-background div {
+		padding-left:100px;
+	}
+
+	#assay-container {
+		padding:20px 100px ;
+		height: auto;
+		font-size: 15px;
+	}
 
 }
 /* Ipad Pro */
 @media (min-width: 1024px) and (max-width: 1100px) {
+	/*about*/
+	.about-header {
+		white-space: normal;
+		font-size: 18px;
+	}
+	#about {
+		display: flex;
+		align-items: center;
+		padding:0;
+	}
+	#about-inner-container {
+		margin:50px 200px 0 100px;
+		width: auto;
+		padding:0;
+	}
+	.tagline {
+		font-size: 15px;
+	}
+	/* quantum technology */
 	#quantum-container-outer {
-		padding-right: 50px;
-		padding-left: 110px;
-		font-size: 1em;
+		padding:20px 100px ;
+		height: auto;
+    font-size: 15px;
 	}
-		/* magnetic asssay technology */
-	#assay-text {
-		font-size: 0.9em;
+	#quantum-technology {
+		display: flex;
+		align-items: center;
 	}
+	/* assay technology */
+
+	.technology-header {
+		font-size: 24px;
+	}
+	#assay-technology-background div {
+		padding-left:100px;
+	}
+
 	#assay-container {
-		padding-right: 30px;
-		padding-left: 30px;
+		padding:20px 100px ;
+		height: auto;
+		font-size: 15px;
 	}
+	/*benefits*/
+	#sample-prep-container {
+		flex-direction: row;
+		display: flex;
+		justify-content: space-around;
+	}
+	.sample-prep-row div{
+		padding: 0 40px;
+	}
+	#benefits-item-list {
+		padding: 100px 80px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 440px 240px 300px;
+		grid-gap:10px;
+	}
+	#benefits-four {
+		grid-column: 2;
+		grid-row: 1;
+	}
+	#benefits-one {
+		grid-column:1/3;
+		grid-row: 3;
+	}
+	#benefits-three {
+		grid-column:1;
+		grid-row: 2;
+	}
+	#benefits-two {
+		grid-column: 2;
+		grid-row: 2;
+	}
+	#benefits-five {
+		grid-column: 1 ;
+		grid-row: 1;
+	}
+
+
 	/* news */
 	.news-preview-item {
 		width:100%;
-		margin-bottom: 5px;
-		height: 20%;
 		font-size: 1.4em;
-
+		margin-bottom: 10px;
 	}
 
 	#news-preview {
 		flex-direction: column;
+		height:auto;
+
 	}
 	.news-preview-item img {
 		display: none;
@@ -1455,6 +1728,7 @@ ul li a:hover {
 			top: 0;
 			left: 0;
 	}
+
 
 	/* contact us */
 	.contact-container {
@@ -1471,48 +1745,7 @@ ul li a:hover {
 		width: 500px;
 	}
 
-	/* Benefits */
-	#benefits {
-		padding: 0;
-	}
-	.benefits-list {
-		margin:0;
-		padding-top: 40px;
-	}
-	.benefits-text {
-		font-size: 0.8em;
-	}
-	.text-column {
-		display: none;
-	}
-	.text-column-small {
-		display: block;
-		text-align: left;
-		font-size: 0.9em;
-	}
-	.benefits-list li {
-		padding: 15px 0;
-		font-size: 1.4em;
-		text-align: left;
-		white-space: normal;
-	}
-	.header {
-		margin-left: 10px;
-		padding-top: 70px;
-		padding-bottom: 10px;
-	}
-	/* About */
-	#about {
-		padding: 0 20% 1px 10%;
-	}
-	.about-header {
-		font-size: 2.7em;
-		white-space: normal;
-		padding-top: 25%;
-	}
-	.tagline {
-		font-size: 1.7em;
-	}
+
 	/* team */
 	#team {
 		padding-top:0;
@@ -1536,13 +1769,15 @@ ul li a:hover {
 }
 /* Small Desktops */
 @media (min-width: 1101px) and (max-width: 1199px) {
+	.picture-filler {
+		width: 250px;
+		height: 150px;
+	}
 	#quantum-container-outer {
 		padding-right: 50px;
 		padding-left: 110px;
 	}
-	#quantum-container-outer {
-		font-size: 1em;
-	}
+
 	/* magnetic asssay technology */
 	#assay-text {
 		font-size: 0.9em;
@@ -1618,10 +1853,7 @@ ul li a:hover {
 		margin-left: 10px;
 		padding-bottom: 10px;
 	}
-	/* About */
-	#about {
-		padding: 20% 20% 50px 15%;
-	}
+
 
 	/* team */
 	.member-info {
@@ -1645,48 +1877,15 @@ ul li a:hover {
 /* Bigger Desktops */
 @media (min-width: 1200px) and (max-width: 1450px) {
 
-	/* publications and news */
-	.news-preview-item {
-		height: 43%;
-		font-size: 1.30em;
-		line-height: 1.30;
 
-	}
 
-	/* Benefits */
-	.benefits-list {
-		padding-left: 0;
-		padding-right: 0;
-		margin-right: 0;
-	}
-	.benefits-text {
-		font-size: 1em;
-	}
 
-	.benefits-list li {
-		padding: 20px 0;
-		font-size: 1.3em;
-	}
-	.text-row {
-		font-size: 1.1em;
-	}
-	.text-column {
-		font-size: 1.5em;
-	}
 
 }
 
 /* Even Bigger Desktops */
 @media (min-width: 1451px) and (max-width: 1800px) {
-	/* publications and news */
-	.news-preview-item {
-		font-size: 1.35em;
-		line-height: 1.35;
-	}
-	.benefits-list li {
-		padding: 20px 0;
-		font-size: 1.4em;
-	}
+
 
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
