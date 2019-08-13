@@ -104,51 +104,33 @@ ul li a:hover {
 	white-space: nowrap;
 	font-family: 'Roboto', sans-serif;
 }
-#about-inner-container {
-	background:rgba(255,255,255,0.5);
-	align-items: center;
-	margin-right:35%;
-	padding-left: 100px;
-}
+
+
 #about {
-	padding-top: 200px;
+	display: flex;
+	align-items: center;
+	padding:0;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-attachment: fixed;
+	background-image: url('../images/fractal5.jpg');
 	font-family: 'Roboto', sans-serif;
-	color: #20002C;
-	line-height: 1.5;
-	font-size: 15px;
-	position: relative;
+	color: white;
+}
+#about-inner-container {
+	margin-left:100px;
+	width: 700px;
+	padding:0;
 }
 
-#about:before {
-	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: right;
-	position: absolute;
-	background-image: url('../images/diamond-background.png');
-	opacity: 0.5;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -2;
-	content: "";
-}
-.tagline {
-	margin-top: 20px;
-}
 /* Quantum Sensor Technology */
 
 #quantum-technology {
 	position: relative;
-	background: #e6e4eb;
 }
 #quantum-technology:before {
 	background-repeat: no-repeat;
-	background-size:contain;
-	background-position: right;
+	background-size:cover;
+	background-image: url('../images/imaging-technology-bg2.jpg');
 	opacity: 0.5;
 	content: "";
 	display: block;
@@ -161,6 +143,9 @@ ul li a:hover {
 }
 #quantum-sensor-container {
 	color: #20002C;
+	background: rgba(255,255,255, 0.5);
+	border-radius: 5px;
+	padding:10px;
 }
 #quantum-sensor-container h2 {
 	padding-bottom: 20px;
@@ -405,26 +390,24 @@ ul li a:hover {
 }
 
 #core-team-option {
-	margin-top: 100px!important;
+	margin-top: 20px!important;
 }
 #advisory-board-option {
 	display: flex;
-	padding-top: 3%;
+	padding-top: 20px;
 }
-.team-subheader h3 {
-	color: rgba(255, 255, 255,0.4);
+
+.team-subheader {
+	padding-top:15px;
+	padding-bottom:30px;
+	position:relative;
+	display:inline-block;
+	color: rgba(255, 255, 255,0.6);
 	padding-left: 10px;
 	padding-right: 10px;
 	width: wrap;
 	text-transform:uppercase;
 	font-size: 18px;
-
-}
-.team-subheader {
-	padding-top:30px;
-	padding-bottom:30px;
-	position:relative;
-	display:inline-block;
 }
 
 .member-info {
@@ -769,21 +752,22 @@ ul li a:hover {
 	.benefits-item {
 		justify-content: center;
 	}
-		.sample-prep-row div{
-			padding: 0 40px;
-		}
-		#sample-prep-container {
-			display:none;
-		}
+	.sample-prep-row div{
+		padding: 0 0px;
+	}
+
+	.sample-prep-row{
+		padding-bottom: 5px;
+	}
 		#benefits-item-list {
-			padding: 100px 30px;
+			padding: 50px 10px;
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(5, 1fr);
+			grid-template-rows: auto;
 			grid-gap:10px;
 		}
 		.picture-filler {
-			display: none;
+			width:250px;
 		}
 		#benefits-four {
 			grid-column: 1;
@@ -828,7 +812,6 @@ ul li a:hover {
 	}
 	#about {
     padding: 50px 0 0 0;
-    background: white;
 	}
 	#about-inner-container {
 		margin:0 40px 40px 40px;
@@ -837,6 +820,7 @@ ul li a:hover {
 	}
 	.tagline {
 		font-size: 15px;
+		padding-bottom: 50px;
 	}
 
 	/* benefits */
@@ -853,12 +837,13 @@ ul li a:hover {
 	}
 
 	/* team */
-	.team-subheader {
-		padding:0;
-	}
+
 	.team-header {
 		padding-left: 4%;
 		padding-top: 30px;
+	}
+	.team-subheader {
+		padding-left: 4%;
 	}
 	.member-info {
 		font-size: 15px;
@@ -946,7 +931,6 @@ ul li a:hover {
 	}
 	#about {
     padding: 50px 0 0 0;
-    background: white;
 		display: flex;
 		align-items: center;
 	}
@@ -991,21 +975,21 @@ ul li a:hover {
 		justify-content: center;
 	}
 		.sample-prep-row div{
-			padding: 0 40px;
+			padding: 0 10px;
 		}
-		#sample-prep-container {
-			display:none;
+
+		.sample-prep-row{
+			padding-bottom: 5px;
 		}
+
 		#benefits-item-list {
 			padding: 100px 20px;
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(5, 1fr);
+			grid-template-rows: auto;
 			grid-gap:10px;
 		}
-		.picture-filler {
-			display: none;
-		}
+
 		#benefits-four {
 			grid-column: 1;
 			grid-row: 1;
@@ -1049,9 +1033,7 @@ ul li a:hover {
 		}
 
 		/* team */
-		.team-subheader {
-			padding:0;
-		}
+
 		.team-header {
 			padding-left: 4%;
 			padding-top: 30px;
@@ -1064,6 +1046,9 @@ ul li a:hover {
 		}
 		#team {
 			padding:0;
+		}
+		.team-subheader {
+			padding-left:4%;
 		}
 
 		.member-img {
@@ -1139,7 +1124,6 @@ ul li a:hover {
 	}
 	#about {
     padding: 50px 0 0 0;
-    background: white;
 		display: flex;
 		align-items: center;
 	}
@@ -1183,22 +1167,21 @@ ul li a:hover {
 	.benefits-item {
 		justify-content: center;
 	}
-		.sample-prep-row div{
-			padding: 0 40px;
-		}
-		#sample-prep-container {
-			display:none;
-		}
+	.sample-prep-row div{
+		padding: 0 10px;
+	}
+
+	.sample-prep-row{
+		padding-bottom: 5px;
+	}
 		#benefits-item-list {
-			padding: 100px 30px;
+			padding: 50px 30px;
 			display: grid;
 			grid-template-columns: repeat(1, 1fr);
-			grid-template-rows: repeat(5, 1fr);
+			grid-template-rows: auto;
 			grid-gap:10px;
 		}
-		.picture-filler {
-			display: none;
-		}
+
 		#benefits-four {
 			grid-column: 1;
 			grid-row: 1;
@@ -1241,9 +1224,7 @@ ul li a:hover {
 	}
 
 	/* team */
-	.team-subheader {
-		padding:0;
-	}
+
 	.team-header {
 		padding-left: 4%;
 		padding-top: 30px;
@@ -1256,6 +1237,10 @@ ul li a:hover {
 	}
 	#team {
 		padding:0;
+	}
+
+	.team-subheader {
+		padding-left: 4%;
 	}
 
 	.member-img {
@@ -1330,22 +1315,21 @@ ul li a:hover {
 .benefits-item {
 	justify-content: center;
 }
-	.sample-prep-row div{
-		padding: 0 40px;
-	}
-	#sample-prep-container {
-		display:none;
-	}
+.sample-prep-row div{
+	padding: 0 10px;
+}
+
+.sample-prep-row{
+	padding-bottom: 5px;
+}
 	#benefits-item-list {
 		padding: 100px 80px;
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: repeat(5, 1fr);
+		grid-template-rows: auto;
 		grid-gap:10px;
 	}
-	.picture-filler {
-		display: none;
-	}
+
 	#benefits-four {
 		grid-column: 1;
 		grid-row: 1;
@@ -1487,12 +1471,10 @@ ul li a:hover {
 		padding: 100px 80px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 270px 270px 550px;
+		grid-template-rows: 1fr 270px 550px;
 		grid-gap:10px;
 	}
-	.picture-filler {
-		display: none;
-	}
+
 	#benefits-four {
 		grid-column: 2;
 		grid-row: 1;
@@ -1673,6 +1655,7 @@ ul li a:hover {
 	}
 	.sample-prep-row div{
 		padding: 0 40px;
+
 	}
 	#benefits-item-list {
 		padding: 100px 80px;
@@ -1874,20 +1857,7 @@ ul li a:hover {
 		margin: 70px 0 0 0;
 	}
 }
-/* Bigger Desktops */
-@media (min-width: 1200px) and (max-width: 1450px) {
 
-
-
-
-
-}
-
-/* Even Bigger Desktops */
-@media (min-width: 1451px) and (max-width: 1800px) {
-
-
-}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 	.sidebar {
