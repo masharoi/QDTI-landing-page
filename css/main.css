@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* Body */
 section {
 	min-height: 100vh;
@@ -131,7 +131,7 @@ ul li a:hover {
 	background-repeat: no-repeat;
 	background-size:cover;
 	background-image: url('../images/imaging-technology-bg2.jpg');
-	opacity: 0.5;
+	opacity: 0.25;
 	content: "";
 	display: block;
 	position: absolute;
