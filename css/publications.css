@@ -11,13 +11,20 @@
 	font-size: 15px;
   margin: 0 40px;
 }
+body {
+   background: #f5f2f2;
+   margin:0!important;
+   padding:0!important;
+}
+#publications {
+}
 #publications:before {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../images/diamond-background.png');
+    background-position: center ;
     opacity: 0.25;
     content: "";
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -35,9 +42,7 @@
 ul {
   padding:0;
 }
-body {
-  background: #f5f2f2;
-}
+
 
 .inner-container {
   background: white;

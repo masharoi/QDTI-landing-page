@@ -1658,9 +1658,15 @@ ul li a:hover {
 		padding: 100px 80px;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: 440px 240px 300px;
+		grid-template-rows: 440px 240px 700px;
 		grid-gap:10px;
 	}
+	.sample-prep-drawing {
+		 height: 500px;
+		 width: 250px;
+		 border-radius: 5px;
+		 background: black;
+	  }
 	#benefits-four {
 		grid-column: 2;
 		grid-row: 1;
@@ -1853,8 +1859,21 @@ ul li a:hover {
 	.team-caption {
 		margin: 70px 0 0 0;
 	}
+	.sample-prep-drawing {
+		 height: 500px;
+		 width: 250px;
+		 border-radius: 5px;
+		 background: black;
+	  }
 }
-
+@media (min-width: 1200px) and (max-width: 1280px) {
+.sample-prep-drawing {
+	 height: 500px;
+	 width: 250px;
+	 border-radius: 5px;
+	 background: black;
+  }
+}
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
 	.sidebar {
